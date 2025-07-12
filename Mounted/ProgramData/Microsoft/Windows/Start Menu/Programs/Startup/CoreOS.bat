@@ -1,22 +1,21 @@
-:: Head
+:: Batch
 @echo off
 title CoreOS Script
 mode con: cols=80 lines=20
 color a
 :: Script oncesi
-echo Sistem ayarlaniyor...
+echo Script basliyor, lutfen pencereyi kapatmayin.
 taskkill /f /im explorer.exe
 powershell "Set-ExecutionPolicy -ExecutionPolicy Unrestricted"
 timeout /t 2 /nobreak >nul
 cls
-:: Guc planini dahil etme
-echo Guc plani ekleniyor
+:: Guc plani
+echo Guc plani ice aktariliyor.
 powercfg /import "%SYSTEMDRIVE%\drive\v3.pow" e9a42b02-d5df-448d-aa00-03f14749eb61
 powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
-cls
 timeout /t 2 /nobreak >nul
-:: OpenShell ve 7zip
-echo OpenShell ve 7zip yukleniyor
+cls
+:: 7-zip ve OpenShell
 %SYSTEMDRIVE%\drive\oss.exe /qn ADDLOCAL=StartMenu >NUL 2>&1
 %SYSTEMDRIVE%\drive\7z.exe /S >NUL 2>&1
 move "%SYSTEMDRIVE%\drive\v3.skin7" "%PROGRAMFILES%\Open-Shell\Skins\" >NUL 2>&1
@@ -41,18 +40,18 @@ Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkinVa
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkinOptionsW7" /t REG_MULTI_SZ /d "" /f
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\OpenShell\StartMenu\Settings" /v "CustomTaskbar" /t REG_DWORD /d "0" /f
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\OpenShell\StartMenu\Settings" /v "OpenMouseMonitor" /t REG_DWORD /d "0" /f
-cls
 timeout /t 2 /nobreak >nul
-:: Microsoft Store ve drive klasoru
-echo Gereksiz dosyalar kaldiriliyor
+cls
+:: Gereksiz dosyalar
+echo Gereksiz dosyalar siliniyor.
 powershell.exe "Get-AppxPackage -AllUsers *WindowsStore* | Remove-AppxPackage"
 del /F /Q "%SYSTEMDRIVE%\drive\oss.exe"
 del /F /Q "%SYSTEMDRIVE%\drive\7z.exe"
 del /F /Q "%SYSTEMDRIVE%\drive\v3.pow"
-cls
 timeout /t 2 /nobreak >nul
+cls
 :: 7zip ayarlari
-echo 7zip ayarlaniyor...
+echo 7zip ayarlaniyor.
 Reg.exe add "HKEY_CURRENT_USER\Software\Classes\.7z" /ve /t REG_SZ /d "7-Zip.7z" /f
 Reg.exe add "HKEY_CURRENT_USER\Software\Classes\7-Zip.7z" /ve /t REG_SZ /d "7z Archive" /f
 Reg.exe add "HKEY_CURRENT_USER\Software\Classes\7-Zip.7z\DefaultIcon" /ve /t REG_SZ /d "C:\Program Files\7-Zip\7z.dll,0" /f
@@ -273,53 +272,45 @@ Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explore
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\7-Zip\Options" /v "MenuIcons" /t REG_DWORD /d "0" /f
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\7-Zip\Options" /v "ElimDupExtract" /t REG_DWORD /d "0" /f
 Reg.exe add "HKEY_CURRENT_USER\SOFTWARE\7-Zip\Options" /v "ContextMenu" /t REG_DWORD /d "516" /f
-cls
 timeout /t 2 /nobreak >nul
-:: DirectX ve VisualCPP kurulumu
-echo DirectX ve VisualCPP kuruluyor
+cls
+:: DirectX ve VisualCPP
+echo DirectX ve VisualCPP kuruluyor.
 start /wait %SYSTEMDRIVE%\drive\directx\dxsetup.exe /silent
-del /F /S /Q "%SYSTEMDRIVE%\drive\directx" >NUL 2>&1
-echo 2005...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2005_x86.exe /q
-echo 2008...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2008_x86.exe /qb
-echo 2010...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2010_x86.exe /passive /norestart
-echo 2012...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2012_x86.exe /passive /norestart
-echo 2013...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2013_x86.exe /passive /norestart
-echo 2015 - 2022...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2015_2017_2019_2022_x86.exe /passive /norestart
-echo 2005...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2005_x86.exe /q
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2005_x64.exe /q
-echo 2008...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2008_x86.exe /qb
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2008_x64.exe /qb
-echo 2010...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2010_x86.exe /passive /norestart
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2010_x64.exe /passive /norestart
-echo 2012...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2012_x86.exe /passive /norestart
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2012_x64.exe /passive /norestart
-echo 2013...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2013_x86.exe /passive /norestart
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2013_x64.exe /passive /norestart
-echo 2015 - 2022...
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2015_2017_2019_2022_x86.exe /passive /norestart
 start /wait %SYSTEMDRIVE%\drive\visualcpp\vcredist2015_2017_2019_2022_x64.exe /passive /norestart
+del /F /S /Q "%SYSTEMDRIVE%\drive\directx" >NUL 2>&1
 del /F /S /Q "%SYSTEMDRIVE%\drive\visualcpp" >NUL 2>&1
-cls
 timeout /t 2 /nobreak >nul
-:: BCDEdit ve Device Manager ayarlari
-echo Ince ayarlar
+cls
+:: BCDEdit
+echo BCDEdit ayarlaniyor.
 bcdedit /timeout 10
 bcdedit /set useplatformtick No
 bcdedit /set disabledynamictick Yes
 bcdedit /set bootmenupolicy Legacy
 bcdedit /set quietboot On
 bcdedit /set nx OptIn
+timeout /t 2 /nobreak >nul
+cls
+:: Device Manager
+echo Device Manager ayarlaniyor.
 dmv /disable "System Speaker"
 dmv /disable "System Timer"
 dmv /disable "High precision event timer"
@@ -348,10 +339,6 @@ dmv /disable "Base System Device"
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3" /V "1806" /T "REG_DWORD" /D "0000000000" /F
 REG ADD "HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3" /V "1806" /T "REG_DWORD" /D "0000000000" /F
 REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\Security" /V "DisableSecuritySettingsCheck" /T "REG_DWORD" /D "00000001" /F
-cls
-timeout /t 2 /nobreak >nul
-:: Regedit ayarlari
-echo Lutfen bekleyin...
 PowerRun.exe /SW:0 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicguestinterface" /v "Start" /t REG_DWORD /d "4" /f
 PowerRun.exe /SW:0 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicheartbeat" /v "Start" /t REG_DWORD /d "4" /f
 PowerRun.exe /SW:0 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmickvpexchange" /v "Start" /t REG_DWORD /d "4" /f
@@ -580,18 +567,21 @@ for /f "delims=" %%a in ('powershell -NoLogo -NoProfile -NonInteractive -Command
     echo %%a
 )
 powercfg /h off
-bcdedit /set {current} description "CoreOS v1.0 AiO"
+bcdedit /set {current} description "CoreOS"
 rd /s /q %WINDIR%\Temp\ >NUL 2>&1
 if exist "%SYSTEMDRIVE%\Program Files (x86)\Microsoft\Edge\Application" (
-    for /f "delims=" %a% in ('where /r "%SYSTEMDRIVE%\Program Files (x86)\Microsoft\Edge\Application" *setup.exe*') do (
-        if exist "%a%" (
-            "%a%" --uninstall --system-level --verbose-logging --force-uninstall
+    for /f "delims=" %%a in ('where /r "%SYSTEMDRIVE%\Program Files (x86)\Microsoft\Edge\Application" *setup.exe*') do (
+        if exist "%%a" (
+            "%%a" --uninstall --system-level --verbose-logging --force-uninstall
         )
     )
 )
 sc delete edgeupdate >NUL 2>&1
 sc delete edgeupdatem >NUL 2>&1
-:: Disable SchTasks
+timeout /t 2 /nobreak >nul
+cls
+:: SchTasks
+echo SchTasks ayarlaniyor.
 PowerRun.exe /SW:0 schtasks.exe /Change /Disable /TN "\MicrosoftEdgeUpdateTaskMachineCore" >NUL 2>&1
 PowerRun.exe /SW:0 schtasks.exe /Change /Disable /TN "\MicrosoftEdgeUpdateTaskMachineUA" >NUL 2>&1
 PowerRun.exe /SW:0 schtasks.exe /Change /Disable /TN "\Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem" >NUL 2>&1
@@ -647,46 +637,12 @@ PowerRun.exe /SW:0 taskkill.exe /im "StartMenuExperienceHost.exe" /t /f
 PowerRun.exe /SW:0 powershell.exe Rename-Item -Path "C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -NewName "StartMenuExperienceHost.old"
 PowerRun.exe /SW:0 taskkill.exe /im "HelpPane.exe" /t /f >NUL 2>&1
 PowerRun.exe /SW:0 cmd.exe /c del /F /Q "%SYSTEMDRIVE%\Windows\HelpPane.exe"
-rd /s /q "%SYSTEMDRIVE%\Program Files (x86)\Microsoft" >NUL 2>&1
-rd /s /q %SYSTEMDRIVE%\drive\ >NUL 2>&1
+timeout /t 2 /nobreak >nul
+cls
 :: Tweaks
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BluetoothUserService" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthAvctpSvc" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RFCOMM" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthEnum" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthLEEnum" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthA2dp" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFEnum" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthMini" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHMODEM" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHUSB" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidBth" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft_Bluetooth_AvrcpTransport" /v "Start" /t REG_DWORD /d "4" /f
+echo Ince ayarlar yapiliyor.
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WlanSvc" /v "Start" /t REG_DWORD /d "4" /f
 Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vwififlt" /v "Start" /t REG_DWORD /d "4" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v "Debugger" /t REG_SZ /d "\"C:\WINDOWS\PROCESS EXPLORER.EXE\"" /f
-sc stop Spooler >nul 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\Spooler" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\PrintNotify" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\PrintWorkflowUserSvc" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
-dism /online /Disable-Feature /FeatureName:Printing-Foundation-InternetPrinting-Client >nul 2>&1
-dism /online /Disable-Feature /FeatureName:Printing-Foundation-Features >nul 2>&1
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "0" /f
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "FilterAdministratorToken" /t REG_DWORD /d "0" /f
-reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mpssvc" /v "Start" /t REG_DWORD /d "4" /f
-reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BFE" /v "Start" /t REG_DWORD /d "4" /f
-netsh int ipv4 set glob defaultcurhoplimit=65
-netsh int ipv6 set glob defaultcurhoplimit=65
-PowerRun.exe /SW:0 taskkill.exe /im "StartMenuExperienceHost.exe" /t /f
-PowerRun.exe /SW:0 powershell.exe Rename-Item -Path "C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -NewName "StartMenuExperienceHost.old"
-PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TextInputHost.exe" /v Debugger /d "%SystemRoot%\system32\systray.exe" /f
-PowerRun.exe /SW:0 taskkill.exe /im "TextInputHost.exe" /t /f
-PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /v Debugger /d "%SystemRoot%\system32\systray.exe" /f
-PowerRun.exe /SW:0 taskkill.exe /im "WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /t /f 
-PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /v Debugger /f
 bcdedit /set useplatformtick No
 bcdedit /set tscsyncpolicy Enhanced
 set "x=512"
@@ -704,36 +660,75 @@ for /f %%i in ('wmic path Win32_NetworkAdapter get PNPDeviceID^| findstr /L "PCI
         )
     )
 )
-powercfg -setacvalueindex scheme_current sub_processor 5d76a2ca-e8c0-402f-a133-2158492d58ad 1
+PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\TextInputHost.exe" /v Debugger /d "%SystemRoot%\system32\systray.exe" /f
+PowerRun.exe /SW:0 taskkill.exe /im "TextInputHost.exe" /t /f
+PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /v Debugger /d "%SystemRoot%\system32\systray.exe" /f
+PowerRun.exe /SW:0 taskkill.exe /im "WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /t /f 
+PowerRun.exe /SW:0 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\WindowsInternal.ComposableShell.Experiences.TextInput.InputApp.exe" /v Debugger /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v "Debugger" /t REG_SZ /d "\"C:\WINDOWS\PROCESS EXPLORER.EXE\"" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "SystemResponsiveness" /t REG_DWORD /d "10" /f
+PowerRun.exe /SW:0 taskkill.exe /im "StartMenuExperienceHost.exe" /t /f
+PowerRun.exe /SW:0 powershell.exe Rename-Item -Path "C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -NewName "StartMenuExperienceHost.old"
+sc stop Spooler >nul 2>&1
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\Spooler" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\PrintNotify" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\PrintWorkflowUserSvc" /v "Start" /t REG_DWORD /d "4" /f >nul 2>&1
+dism /online /Disable-Feature /FeatureName:Printing-Foundation-InternetPrinting-Client >nul 2>&1
+dism /online /Disable-Feature /FeatureName:Printing-Foundation-Features >nul 2>&1
+powercfg -setacvalueindex scheme_current sub_processor 5d76a2ca-e8c0-402f-a133-2158492d58ad 0
 powercfg -setactive scheme_current
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "NoLazyMode" /t REG_DWORD /d "1" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BluetoothUserService" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthAvctpSvc" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RFCOMM" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthEnum" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthLEEnum" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthA2dp" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFEnum" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthMini" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHMODEM" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHUSB" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidBth" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Microsoft_Bluetooth_AvrcpTransport" /v "Start" /t REG_DWORD /d "4" /f
+bcdedit /set IncreaseUserVA 3072
+reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mpssvc" /v "Start" /t REG_DWORD /d "4" /f
+reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BFE" /v "Start" /t REG_DWORD /d "4" /f
+Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "0" /f
+Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "FilterAdministratorToken" /t REG_DWORD /d "0" /f
 Reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\csrss.exe\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "4" /f
+for /f %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do (
+	reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TcpAckFrequency" /t REG_DWORD /d "1" /f
+	reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f
+    reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TCPNoDelay" /t REG_DWORD /d "1" /f
+)
+Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "LazyModeTimeout" /t REG_DWORD /d "10000" /f
+Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "LargeSystemCache" /t REG_DWORD /d "0" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "IOPageLockLimit" /t REG_DWORD /d "4294967295" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MMCSS" /v "Start" /t REG_DWORD /d "2" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services" /v "IoLatencyCap" /t REG_DWORD /d "20" /f
+Reg.exe delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm" /v "OverlayTestMode" /f
+Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "InterruptSteeringDisabled" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
+netsh int ipv4 set glob defaultcurhoplimit=65
+netsh int ipv6 set glob defaultcurhoplimit=65
 set "PPM="
 for /f "delims=" %%a in ('wmic cpu get name') do (
     echo %%a | findstr /i "AMD" >nul && set "PPM=AmdPPM"
     echo %%a | findstr /i "Intel" >nul && set "PPM=IntelPPM"
 )
 reg add "HKLM\System\CurrentControlSet\Services\%PPM%" /v "Start" /t REG_DWORD /d "4" /f
-for /f %%i in ('wmic path win32_networkadapter get GUID ^| findstr "{"') do (
-	reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TcpAckFrequency" /t REG_DWORD /d "1" /f
-	reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TcpDelAckTicks" /t REG_DWORD /d "0" /f
-    reg add "HKLM\System\CurrentControlSet\services\Tcpip\Parameters\Interfaces\%%i" /v "TCPNoDelay" /t REG_DWORD /d "1" /f
-)
-Reg.exe delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm" /v "OverlayTestMode /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MMCSS" /v "Start" /t REG_DWORD /d "2" /f
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v "LazyModeTimeout" /t REG_DWORD /d "10000" /f
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DisableDynamicPstate" /t REG_DWORD /d "1" /f
-bcdedit /set IncreaseUserVA 3072
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "InterruptSteeringDisabled" /t REG_DWORD /d "0" /f
-Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "LargeSystemCache" /t REG_DWORD /d "0" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "IOPageLockLimit" /t REG_DWORD /d "4294967295" /f
-Reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services" /v "IoLatencyCap" /t REG_DWORD /d "20" /f
-:: Bitiris
 REGEDIT.EXE /S "%SYSTEMDRIVE%\drive\v3.reg"
-cls
-shutdown -r -f -t 7 -c "Lutfen bekleyin..."
-timeout /t 3 /nobreak >NUL 2>&1
 del /F /Q "%SYSTEMDRIVE%\drive\v3.reg" >NUL 2>&1
+timeout /t 2 /nobreak >nul
+cls
+:: Bitiris
+rd /s /q "%SYSTEMDRIVE%\Program Files (x86)\Microsoft" >NUL 2>&1
+rd /s /q %SYSTEMDRIVE%\drive\ >NUL 2>&1
+shutdown -r -f -t 7 -c "Please wait until your PC restarts..."
+timeout /t 3 /nobreak >NUL 2>&1
 del /F /Q "%SYSTEMDRIVE%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\CoreOS.bat" >NUL 2>&1
 timeout /t 4 /nobreak >NUL 2>&1
 pause >NUL 2>&1
