@@ -355,6 +355,7 @@
 				<Tweak name="CrashControl\CrashDumpEnabled">0</Tweak>
 			</TweakGroup>
 			<TweakGroup name="DesktopTweaks">
+				<Tweak name="Search\SearchboxTaskbarMode">0</Tweak>
 				<Tweak name="Explorer\NoPinningStoreToTaskbar">1</Tweak>
 				<Tweak name="Explorer\AltTabSettings">1</Tweak>
 				<Tweak name="Personalize\AppsUseLightTheme">0</Tweak>
@@ -371,6 +372,13 @@
 				<Tweak name="Search\SearchboxTaskbarMode">1</Tweak>
 				<Tweak name="System\DisableLogonBackgroundImage">1</Tweak>
 				<Tweak name="Keyboard\PrintScreenKeyForSnippingEnabled">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Network">
+				<Tweak name="NewNetworkWindowOff\NewNetworkWindowOff">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="UAC">
+				<Tweak name="System\EnableLUA">0</Tweak>
+				<Tweak name="System\ConsentPromptBehaviorAdmin">0</Tweak>
 			</TweakGroup>
 			<TweakGroup name="EventLogs">
 				<Tweak name="Microsoft-Windows-OOBE-Machine-DUI\Operational\Enabled">0</Tweak>
@@ -559,8 +567,8 @@
 			<Task>imageSaveRebuild</Task>
 			<Task>imageFormatWim</Task>
 		</ImageTasks>
-		<AutoIsoFile>W10_22H2_GAMEROS.iso</AutoIsoFile>
-		<AutoIsoLabel>GamerOS for Windows 10 22H2</AutoIsoLabel>
+		<AutoIsoFile>release.iso</AutoIsoFile>
+		<AutoIsoLabel>Core</AutoIsoLabel>
 		<AutoSplitSize>4000</AutoSplitSize>
 	</ApplyOptions>
 	<Execution BeforeLogonMode="0">
