@@ -11,8 +11,8 @@ timeout /t 2 /nobreak >nul
 cls
 :: Guc plani
 echo Guc plani ice aktariliyor.
-powercfg /import "%SYSTEMDRIVE%\drive\v3.pow" e9a42b02-d5df-448d-aa00-03f14749eb61
-powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
+powercfg /import "%SYSTEMDRIVE%\drive\v3.pow" 626d07f0-4651-4a85-9341-62992cbe395a
+powercfg /setactive 626d07f0-4651-4a85-9341-62992cbe395a
 timeout /t 2 /nobreak >nul
 cls
 :: 7-zip ve OpenShell
@@ -725,6 +725,7 @@ del /F /Q "%SYSTEMDRIVE%\drive\v3.reg" >NUL 2>&1
 timeout /t 2 /nobreak >nul
 cls
 :: Bitiris
+echo Lutfen bekleyin...
 rd /s /q "%SYSTEMDRIVE%\Program Files (x86)\Microsoft" >NUL 2>&1
 rd /s /q %SYSTEMDRIVE%\drive\ >NUL 2>&1
 shutdown -r -f -t 7 -c "Please wait until your PC restarts..."
