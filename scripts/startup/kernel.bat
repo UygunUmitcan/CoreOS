@@ -11,7 +11,7 @@ timeout /t 3 /nobreak >nul
 cls
 :: Script
 :: Guc plani
-echo Guc planli ayarlaniyor.
+echo Guc plani ayarlaniyor.
 powercfg /import "%SYSTEMDRIVE%\drive\v3.pow" 01001011-0100-1111-0101-001188888884 >NUL 2>&1
 powercfg /s 01001011-0100-1111-0101-001188888884 >NUL 2>&1
 powercfg -delete 381b4222-f694-41f0-9685-ff5bb260df2e >NUL 2>&1
