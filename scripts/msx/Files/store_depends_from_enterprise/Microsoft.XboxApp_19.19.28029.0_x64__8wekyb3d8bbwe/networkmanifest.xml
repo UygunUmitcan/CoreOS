@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetworkManifest xmlns="http://schemas.microsoft.com/xbox/2012/networkmanifest">
+  <SocketDescriptions>
+    <SocketDescription Name="PartyVoiceSocketUdp" SecureIpProtocol="Udp" BoundPort="50101">
+      <AllowedUsages>
+        <SecureDeviceSocketUsage Type="Initiate" />
+        <SecureDeviceSocketUsage Type="Accept" />
+        <SecureDeviceSocketUsage Type="SendChat" />
+        <SecureDeviceSocketUsage Type="SendGameData" />
+        <SecureDeviceSocketUsage Type="ReceiveChat" />
+        <SecureDeviceSocketUsage Type="ReceiveGameData" />
+      </AllowedUsages>
+    </SocketDescription>
+    <SocketDescription Name="PartyChatClientToRelayAcceptor" SecureIpProtocol="Udp" BoundPort="50101-50301">
+      <AllowedUsages>
+        <SecureDeviceSocketUsage Type="Accept" />
+        <SecureDeviceSocketUsage Type="SendChat" />
+        <SecureDeviceSocketUsage Type="SendGameData" />
+        <SecureDeviceSocketUsage Type="ReceiveChat" />
+        <SecureDeviceSocketUsage Type="ReceiveGameData" />
+      </AllowedUsages>
+    </SocketDescription>
+  </SocketDescriptions>
+  <SecureDeviceAssociationTemplates>
+    <SecureDeviceAssociationTemplate Name="PartyVoiceUdp_v2" InitiatorSocketDescription="PartyVoiceSocketUdp" AcceptorSocketDescription="PartyVoiceSocketUdp" MultiplayerSessionRequirement="Required">
+      <AllowedUsages>
+        <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole" />
+        <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole" />
+        <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop" />
+        <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop" />
+        <SecureDeviceAssociationUsage Type="AcceptOnXboxLiveCompute" />
+      </AllowedUsages>
+    </SecureDeviceAssociationTemplate>
+    <SecureDeviceAssociationTemplate Name="PartyChatClientToRelay" InitiatorSocketDescription="PartyVoiceSocketUdp" AcceptorSocketDescription="PartyChatClientToRelayAcceptor" MultiplayerSessionRequirement="Required">
+      <AllowedUsages>
+        <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole" />
+        <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop" />
+        <SecureDeviceAssociationUsage Type="AcceptOnXboxLiveCompute" />
+      </AllowedUsages>
+    </SecureDeviceAssociationTemplate>
+  </SecureDeviceAssociationTemplates>
+</NetworkManifest>

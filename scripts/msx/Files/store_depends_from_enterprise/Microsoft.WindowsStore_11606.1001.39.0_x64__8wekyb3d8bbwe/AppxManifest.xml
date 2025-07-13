@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap mp rescap wincap build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:wincap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  
+  <Identity Name="Microsoft.WindowsStore" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="11606.1001.39.0" ProcessorArchitecture="x64"/>
+  <mp:PhoneIdentity PhoneProductId="7d47d89a-7900-47c5-93f2-46eb6d94c159" PhonePublisherId="95d94207-0c7c-47ed-82db-d75c81153c35"/>
+  <Properties>
+    <DisplayName>ms-resource:StoreTitle</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>Assets\AppTiles\StoreLogo.png</Logo>
+    <uap:SupportedUsers>multiple</uap:SupportedUsers>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.14357.0"/>
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.23816.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+    <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.23901.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+    <PackageDependency Name="Microsoft.NET.Native.Runtime.1.3" MinVersion="1.3.23901.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US"/>
+    <Resource Language="EN-GB"/>
+    <Resource uap:Scale="200"/>
+    
+  </Resources>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>EntCommon.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.AppContracts.Client.AppContractCore" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Catalog.MusicQueries" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Catalog.VideoQueries" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Downloads.DownloadInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Downloads.Downloads" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Downloads.DownloadsFactory" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Fulfillment.EntitlementId" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Fulfillment.Entitlements" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Fulfillment.IngestionFactory" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Fulfillment.IngestedContentItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Infrastructure.TunerInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.HttpQueryEngine" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Requests.DeviceGroup.DeviceGroupInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Requests.Marketplace.CollectionsQueryRequest" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Requests.Mds.Video.AssetLocationRequest" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Requests.Mds.MusicAssetLocation.MusicAssetLocationRequest" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Rfc2046.Mime" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Common.Service.Rfc2046.MimeType" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Configuration.ConfigurationManager" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Configuration.FeaturesConfiguration" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Configuration.LoggingConfiguration" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Configuration.StoreConfiguration" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.FeatureEnablement.FeatureEnablement" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Platform.Playback.MBRByteStreamHandler" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Platform.Telemetry.System" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Platform.Telemetry.Events" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Util.Endpoints" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Util.EndpointManager" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Util.SignIn" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="Microsoft.Entertainment.Util.GlobalizationManager" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.proxyStub">
+      <ProxyStub ClassId="FB06B882-46B8-4625-B239-AF768C8477E3">
+        <Path>EntCommon.dll</Path>
+        <Interface Name="Microsoft.Entertainment.Interop.ICallbackInvoker" InterfaceId="A2082232-0E67-42E1-8214-1BE73406F067"/>
+      </ProxyStub>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WinStore.Entertainment.Mobile.dll</Path>
+        <ActivatableClass ActivatableClassId="WinStore.WinStore_Entertainment_Mobile_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.NavigationOperation" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.UX.StateNegateTrigger" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.UX.Controls.CappedListView" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.UX.Controls.TvEpisodeInfoDialog" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.UX.Controls.ReadMorePopUpParameters" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.ViewModels.DeviceFamilyModuleParameters" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.RuntimeServices" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ResourceLifetimeManager" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.TelemetryInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.ErrorPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.AlbumDetailsPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.VideoTrailerPlaybackPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.TvSeasonDetailsPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Converters.ZeroAlphaColorConverter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Converters.BoolToStyleConverter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Telemetry" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.VideoDetailsPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.BasePage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.ArtistDetailsPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.VideoGalleryPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.NotAvailablePage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleGridView" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ModuleControlBase" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleGridViewItemAutomationPeer" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.CastAndCrewItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.InvokableControlBase" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.VuiComboBoxHost" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.GenresModuleControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ExpandableTextControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.RentalDialog" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.BuyableEpisodeItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibileGridViewAutomationPeer" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.SongListItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AlbumItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.CollectionItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleStackPanel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.SongListModuleControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.RottenTomatoesModuleControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MediaLinkedTextBlock" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleFlipView" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.VideoBuyBoxControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.PdpPriceDisplayControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.PriceDisplayControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MediaImageControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.CircularItemsPanel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ThemedModuleControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ModuleItemsControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleGridViewItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MediaImageControlBase" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MusicPassUpsellBannerControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.HeroCarouselControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.TransposableItemsControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.VideoItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ResponsiveTileListHostControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ColumnListControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MetacriticControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.MediaDiscoveryImageControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.DownloadProgressControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.AccessibleGrid" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.SmallAlbumItemControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.GalleryControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.Controls.ErrorDialog" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.GalleryPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.StaticListGalleryPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.MusicStorePage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.MusicPassDetailsPage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.VideoStorePage" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.UX.ItemTemplates" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.TvSeasonItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.CommunityRating" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.MovieItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.ReviewSet" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.ContributorItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.AlbumItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.SongItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.VideoSkuMetadata" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.TvSeriesItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.MovieDetailsItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.ParameterizedText" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.PriceItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.MediaItemId" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.MediaItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.ChannelItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.RecommendedItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.ArtistItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.Review" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.Hero" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DataModel.TvEpisodeItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.AlbumDetailsViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.ModuleItemsViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.MusicStoreViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.CommandWithLabel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.ShareData" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.VideoStoreViewModelFactory" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.ModuleViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.TvSeasonDetailsViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.MusicStoreViewModelFactory" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.GalleryContentViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.RottenTomatoesViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.VideoStoreViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.TvEpisodeViewModelItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.MusicRegionDiscrepancyViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.ArtistDetailsViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.VideoTrailerPlaybackViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.BindableBase" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.GalleryViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.ViewModels.VideoDetailsViewModel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.AssetLocationInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.DomainDataItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Entertainment.Common.Locale" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WinStore.Vui.dll</Path>
+        <ActivatableClass ActivatableClassId="WinStore.Vui.VuiScrollControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Vui.VisualTreeUtil" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Vui.PhraseData" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStore.Vui.VuiButtonBehavior" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>MS.Entertainment.Common.Mobile.dll</Path>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.VideoNowPlayingQueue" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.OneStore.PlaybackService" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.Controls.ClosedCaptionsControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.Controls.VideoPlaybackControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.VideoMetadata" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.VideoPostrollInfo" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.VideoMediaTransportControls" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.PlaybackSubtitle" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.PlaybackError" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Playback.VideoMediaInstance" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.CircularItemsPanel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterBarDataItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterBarPopup" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterBar" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.MvrFontIcon" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.ParameterizedText" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.PagedItemsControl" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.MediaLinkedRichTextBlock" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterButton" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterBarItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.ReflowPanel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.CommonControlTypeEmitter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Controls.FilterBarItemListView" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.StartupPerfScenarioWrapper" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.PerfTelemetryEvents" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.MutableModifierSet" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.ModifierItemDataTemplateSelector" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.ViewportVisualStateHelper" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.ViewportStateTrigger" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.Pluralization" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.ViewportSizeManager" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Utilities.DeviceClassTrigger" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.DataModifierItem" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.NavigationPerfScenarioWrapper" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Common_Mobile_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.ModifierItemChangedEventArgsWrapper" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.ModifierItemFactory" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Framework.ModifierSet" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Framework.BindableBase" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="MS.Entertainment.Common.Framework.ModifierItem" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WinStoreTasksWrapper.dll</Path>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.PreInstallRegisterTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.MODiscoveryTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.OEMDiscoveryTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.StoreUpdateTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.TileUpdateTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.UICCPinLockStateChangeTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasksWrapper.StoreConfigurationTask" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WinStore.Mobile.dll</Path>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.PreInstallRegisterTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.MODiscoveryTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.StoreUpdateTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.TileUpdateTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.StoreConfigurationTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.OEMDiscoveryTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.TaskSettings" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="WinStoreTasks.UICCPinLockStateChangeTask" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Dimension" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Rendering.PixelDataRenderer" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.BarcodeReader" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417ResultMetadata" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417Writer" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417EncodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.Internal.Dimensions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DataMatrixWriter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Encoder.DefaultPlacement" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DatamatrixEncodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Internal.Version" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.DecodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitMatrix" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.Detector.WhiteRectangleDetector" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitArray" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.EncodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.ReedSolomon.GenericGF" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitSource" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.ResultPoint" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.QrCode.QrCodeEncodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.QrCode.QRCodeWriter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.QrCode.Internal.ErrorCorrectionLevel" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.QrCode.Internal.QRCodeDecoderMetaData" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecResultMetadata" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecEncodingOptions" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecWriter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.Result" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.BarcodeWriter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.OneD.UPCAWriter" ThreadingModel="both"/>
+        <ActivatableClass ActivatableClassId="ZXing.OneD.Code128EncodingOptions" ThreadingModel="both"/>
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <Applications>
+    <Application Id="App" Executable="WinStore.Mobile.exe" EntryPoint="WinStore.WindowsPhone.App">
+      <uap:VisualElements DisplayName="ms-resource:StoreTitle" Square150x150Logo="Assets\AppTiles\StoreMedTile.png" Square44x44Logo="Assets\AppTiles\StoreAppList.png" Description="ms-resource:StoreDescription" BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\AppTiles\StoreBadgeLogo.png"/>
+        <uap:DefaultTile Square71x71Logo="Assets\AppTiles\StoreSmallTile.png" Wide310x150Logo="Assets\AppTiles\StoreWideTile.png" Square310x310Logo="Assets\AppTiles\StoreLargeTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\AppTiles\SplashScreen.png" BackgroundColor="transparent"/>
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ms-windows-store" DesiredView="default">
+            <uap:DisplayName>Windows Store Actions</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ms-windows-store2" DesiredView="default">
+            <uap:DisplayName>Windows Store Actions (interim)</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="zune">
+            <uap:DisplayName>Windows Phone Store Legacy Actions</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="microsoftvideo" DesiredView="default">
+            <uap:DisplayName>Video Store Legacy Desktop Actions</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="microsoftmusic" DesiredView="default">
+            <uap:DisplayName>Music Store Legacy Desktop Actions</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="xboxmusic" DesiredView="default">
+            <uap:DisplayName>Music Store Legacy Phone Actions</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="WinStoreTasksWrapper.PreInstallRegisterTask"/>
+        <Extension Category="windows.updateTask" EntryPoint="WinStoreTasksWrapper.StoreUpdateTask"/>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WinStoreTasksWrapper.MODiscoveryTask">
+          <BackgroundTasks>
+            <Task Type="systemEvent"/>
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WinStoreTasksWrapper.UICCPinLockStateChangeTask">
+          <BackgroundTasks>
+            <Task Type="systemEvent"/>
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WinStoreTasksWrapper.OEMDiscoveryTask">
+          <BackgroundTasks>
+            <Task Type="systemEvent"/>
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WinStoreTasksWrapper.TileUpdateTask">
+          <BackgroundTasks>
+            <Task Type="systemEvent"/>
+            <Task Type="timer"/>
+          </BackgroundTasks>
+        </Extension>
+        <uap:Extension Category="windows.appService" EntryPoint="WinStoreTasksWrapper.StoreConfigurationTask">
+          <uap:AppService Name="microsoft-storeconfig"/>
+        </uap:Extension>
+      </Extensions>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="https://*.*.microsoft.com/" Type="include"/>
+        <uap:Rule Match="https://*.microsoft.com/" Type="include"/>
+      </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer"/>
+    <rescap:Capability Name="cellularDeviceIdentity"/>
+    <rescap:Capability Name="packageQuery"/>
+    <rescap:Capability Name="deviceManagementFoundation"/>
+    <rescap:Capability Name="networkConnectionManagerProvisioning"/>
+    <rescap:Capability Name="storeLicenseManagement"/>
+    <wincap:Capability Name="storeAppInstall"/>
+    <wincap:Capability Name="storeConfiguration"/>
+    <wincap:Capability Name="packageManagement"/>
+    <wincap:Capability Name="shellExperience"/>
+    <DeviceCapability Name="webcam"/>
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="SharedGUID" Value="cb5f5507-25a8-4f7d-a986-e57e73a00546"/>
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053"/>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0"/>
+    <build:Item Name="VisualStudio" Version="14.0"/>
+    <build:Item Name="OperatingSystem" Version="10.0.10586.15 (th2_release.151119-1817)"/>
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25123.0"/>
+    <build:Item Name="ProjectGUID" Value="{BF7733EC-1081-44DD-9658-B5D9126C3407}"/>
+    <build:Item Name="ilc.exe" Version="1.3.24018.00 built by: PROJECTNREL"/>
+    <build:Item Name="OptimizingToolset" Value="ilc.exe"/>
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="true"/>
+    <build:Item Name="UniversalGenericsOptOut" Value="false"/>
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25219.0"/>
+    <build:Item Name="WindowsDesktop" Version="10.0.14357.0"/>
+    <build:Item Name="WindowsMobile" Version="10.0.10586.0"/>
+    <build:Item Name="Xbox" Version="1.0"/>
+    <build:Item Name="MakePri.exe" Version="10.0.14357.1001 (rs1_release.160529-0257)"/>
+  </build:Metadata>
+</Package>

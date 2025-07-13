@@ -1,0 +1,9 @@
+﻿<toast launch="/pushnotification?type=partyinvite&amp;invitetype={0}&amp;partysessionid={1}&amp;gamesessionid={2}&amp;productfamilyname={3}&amp;sender_xuid={4}&amp;title_id={5}">
+  <visual>
+    <binding template="ToastGeneric">
+      <image src="{7}" placement="appLogoOverride" hint-crop="circle"/>
+      <text hint-style="body">{6}</text>
+      <text hint-style="bodySubtle">{8}</text>
+    </binding>
+  </visual>
+</toast>

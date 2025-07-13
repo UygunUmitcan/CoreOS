@@ -1,0 +1,16 @@
+﻿<tile>
+  <visual>
+    <binding template="TileMedium" hint-overlay="0" branding="nameAndLogo">
+      <image src="ms-appx:///Assets/LiveTiles/avatar150x150.png" placement="peek"/>
+      <text hint-maxLines="3" hint-wrap="true" hint-style="Body">{0}</text>
+    </binding>
+    <binding template="TileWide" hint-overlay="0" branding="nameAndLogo">
+      <image src="ms-appx:///Assets/LiveTiles/avatar310x150.png" placement="peek"/>
+      <text hint-maxLines="3" hint-wrap="true" hint-style="Body">{0}</text>
+    </binding>
+    <binding template="TileLarge" hint-overlay="0" branding="nameAndLogo">
+      <image src="ms-appx:///Assets/LiveTiles/avatar310x310.png" placement="peek"/>
+      <text hint-maxLines="3" hint-wrap="true" hint-style="Subtitle">{0}</text>
+    </binding>
+  </visual>
+</tile>

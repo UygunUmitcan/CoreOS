@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Bundle SchemaVersion="2.0" xmlns="http://schemas.microsoft.com/appx/2013/bundle">
+	<Identity Name="Microsoft.DesktopAppInstaller" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.8.5001.0"/>
+	<Packages>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-af" FileName="AppxInstaller_language-af.appx" Offset="60" Size="14605">
+			<Resources>
+				<Resource Language="af-za"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-am" FileName="AppxInstaller_language-am.appx" Offset="14749" Size="15163">
+			<Resources>
+				<Resource Language="am-et"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ar" FileName="AppxInstaller_language-ar.appx" Offset="29996" Size="15094">
+			<Resources>
+				<Resource Language="ar-sa"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-az-latn" FileName="AppxInstaller_language-az-latn.appx" Offset="45179" Size="14973">
+			<Resources>
+				<Resource Language="az-latn-az"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-be" FileName="AppxInstaller_language-be.appx" Offset="60236" Size="15460">
+			<Resources>
+				<Resource Language="be-by"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-bg" FileName="AppxInstaller_language-bg.appx" Offset="75780" Size="15377">
+			<Resources>
+				<Resource Language="bg-bg"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-bn" FileName="AppxInstaller_language-bn.appx" Offset="91241" Size="15312">
+			<Resources>
+				<Resource Language="bn-bd"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ca" FileName="AppxInstaller_language-ca.appx" Offset="106637" Size="14746">
+			<Resources>
+				<Resource Language="ca-es"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-cs" FileName="AppxInstaller_language-cs.appx" Offset="121467" Size="14963">
+			<Resources>
+				<Resource Language="cs-cz"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-da" FileName="AppxInstaller_language-da.appx" Offset="136514" Size="14677">
+			<Resources>
+				<Resource Language="da-dk"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-de" FileName="AppxInstaller_language-de.appx" Offset="151275" Size="14808">
+			<Resources>
+				<Resource Language="de-de"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-el" FileName="AppxInstaller_language-el.appx" Offset="166167" Size="15633">
+			<Resources>
+				<Resource Language="el-gr"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-es" FileName="AppxInstaller_language-es.appx" Offset="181884" Size="16384">
+			<Resources>
+				<Resource Language="es-es"/>
+				<Resource Language="es-mx"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-et" FileName="AppxInstaller_language-et.appx" Offset="198352" Size="14668">
+			<Resources>
+				<Resource Language="et-ee"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-eu" FileName="AppxInstaller_language-eu.appx" Offset="213104" Size="14657">
+			<Resources>
+				<Resource Language="eu-es"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-fa" FileName="AppxInstaller_language-fa.appx" Offset="227845" Size="14958">
+			<Resources>
+				<Resource Language="fa-ir"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-fi" FileName="AppxInstaller_language-fi.appx" Offset="242887" Size="14697">
+			<Resources>
+				<Resource Language="fi-fi"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-fil-latn" FileName="AppxInstaller_language-fil-latn.appx" Offset="257674" Size="14654">
+			<Resources>
+				<Resource Language="fil-ph"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-fr" FileName="AppxInstaller_language-fr.appx" Offset="272412" Size="16861">
+			<Resources>
+				<Resource Language="fr-ca"/>
+				<Resource Language="fr-fr"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-gl" FileName="AppxInstaller_language-gl.appx" Offset="289357" Size="14689">
+			<Resources>
+				<Resource Language="gl-es"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ha-latn" FileName="AppxInstaller_language-ha-latn.appx" Offset="304135" Size="14655">
+			<Resources>
+				<Resource Language="ha-latn-ng"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-he" FileName="AppxInstaller_language-he.appx" Offset="318874" Size="14825">
+			<Resources>
+				<Resource Language="he-il"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-hi" FileName="AppxInstaller_language-hi.appx" Offset="333783" Size="15261">
+			<Resources>
+				<Resource Language="hi-in"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-hr" FileName="AppxInstaller_language-hr.appx" Offset="349128" Size="14807">
+			<Resources>
+				<Resource Language="hr-hr"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-hu" FileName="AppxInstaller_language-hu.appx" Offset="364019" Size="14883">
+			<Resources>
+				<Resource Language="hu-hu"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-id" FileName="AppxInstaller_language-id.appx" Offset="378986" Size="14448">
+			<Resources>
+				<Resource Language="id-id"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-is" FileName="AppxInstaller_language-is.appx" Offset="393518" Size="14765">
+			<Resources>
+				<Resource Language="is-is"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-it" FileName="AppxInstaller_language-it.appx" Offset="408367" Size="14618">
+			<Resources>
+				<Resource Language="it-it"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ja" FileName="AppxInstaller_language-ja.appx" Offset="423069" Size="14911">
+			<Resources>
+				<Resource Language="ja-jp"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-kk" FileName="AppxInstaller_language-kk.appx" Offset="438064" Size="15258">
+			<Resources>
+				<Resource Language="kk-kz"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-km" FileName="AppxInstaller_language-km.appx" Offset="453406" Size="15262">
+			<Resources>
+				<Resource Language="km-kh"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-kn" FileName="AppxInstaller_language-kn.appx" Offset="468752" Size="15272">
+			<Resources>
+				<Resource Language="kn-in"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ko" FileName="AppxInstaller_language-ko.appx" Offset="484108" Size="14946">
+			<Resources>
+				<Resource Language="ko-kr"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-lo" FileName="AppxInstaller_language-lo.appx" Offset="499138" Size="15470">
+			<Resources>
+				<Resource Language="lo-la"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-lt" FileName="AppxInstaller_language-lt.appx" Offset="514692" Size="14843">
+			<Resources>
+				<Resource Language="lt-lt"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-lv" FileName="AppxInstaller_language-lv.appx" Offset="529619" Size="14800">
+			<Resources>
+				<Resource Language="lv-lv"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-mk" FileName="AppxInstaller_language-mk.appx" Offset="544503" Size="15315">
+			<Resources>
+				<Resource Language="mk-mk"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ml" FileName="AppxInstaller_language-ml.appx" Offset="559902" Size="15316">
+			<Resources>
+				<Resource Language="ml-in"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ms" FileName="AppxInstaller_language-ms.appx" Offset="575302" Size="14483">
+			<Resources>
+				<Resource Language="ms-my"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-nb" FileName="AppxInstaller_language-nb.appx" Offset="589869" Size="14595">
+			<Resources>
+				<Resource Language="nb-no"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-nl" FileName="AppxInstaller_language-nl.appx" Offset="604548" Size="14661">
+			<Resources>
+				<Resource Language="nl-nl"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-pl" FileName="AppxInstaller_language-pl.appx" Offset="619293" Size="14905">
+			<Resources>
+				<Resource Language="pl-pl"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-pt" FileName="AppxInstaller_language-pt.appx" Offset="634282" Size="16785">
+			<Resources>
+				<Resource Language="pt-br"/>
+				<Resource Language="pt-pt"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-qps-ploc" FileName="AppxInstaller_language-qps-ploc.appx" Offset="651157" Size="16263">
+			<Resources>
+				<Resource Language="qps-ploc"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-qps-plocm" FileName="AppxInstaller_language-qps-plocm.appx" Offset="667511" Size="14793">
+			<Resources>
+				<Resource Language="qps-plocm"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ro" FileName="AppxInstaller_language-ro.appx" Offset="682388" Size="14789">
+			<Resources>
+				<Resource Language="ro-ro"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ru" FileName="AppxInstaller_language-ru.appx" Offset="697261" Size="15581">
+			<Resources>
+				<Resource Language="ru-ru"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sk" FileName="AppxInstaller_language-sk.appx" Offset="712926" Size="14937">
+			<Resources>
+				<Resource Language="sk-sk"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sl" FileName="AppxInstaller_language-sl.appx" Offset="727947" Size="14842">
+			<Resources>
+				<Resource Language="sl-si"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sq" FileName="AppxInstaller_language-sq.appx" Offset="742873" Size="14923">
+			<Resources>
+				<Resource Language="sq-al"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sr-latn" FileName="AppxInstaller_language-sr-latn.appx" Offset="757885" Size="14806">
+			<Resources>
+				<Resource Language="sr-latn-rs"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sv" FileName="AppxInstaller_language-sv.appx" Offset="772775" Size="14638">
+			<Resources>
+				<Resource Language="sv-se"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-sw" FileName="AppxInstaller_language-sw.appx" Offset="787497" Size="14623">
+			<Resources>
+				<Resource Language="sw-ke"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-ta" FileName="AppxInstaller_language-ta.appx" Offset="802204" Size="15370">
+			<Resources>
+				<Resource Language="ta-in"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-te" FileName="AppxInstaller_language-te.appx" Offset="817658" Size="15220">
+			<Resources>
+				<Resource Language="te-in"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-th" FileName="AppxInstaller_language-th.appx" Offset="832962" Size="15010">
+			<Resources>
+				<Resource Language="th-th"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-tr" FileName="AppxInstaller_language-tr.appx" Offset="848056" Size="14789">
+			<Resources>
+				<Resource Language="tr-tr"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-uk" FileName="AppxInstaller_language-uk.appx" Offset="862929" Size="15576">
+			<Resources>
+				<Resource Language="uk-ua"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-uz-latn" FileName="AppxInstaller_language-uz-latn.appx" Offset="878594" Size="14735">
+			<Resources>
+				<Resource Language="uz-latn-uz"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-vi" FileName="AppxInstaller_language-vi.appx" Offset="893413" Size="14850">
+			<Resources>
+				<Resource Language="vi-vn"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-zh-hans" FileName="AppxInstaller_language-zh-hans.appx" Offset="908352" Size="14551">
+			<Resources>
+				<Resource Language="zh-cn"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.language-zh-hant" FileName="AppxInstaller_language-zh-hant.appx" Offset="922992" Size="14590">
+			<Resources>
+				<Resource Language="zh-tw"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.scale-100" FileName="AppxInstaller_scale-100.appx" Offset="937664" Size="18561">
+			<Resources>
+				<Resource Scale="100"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.scale-125" FileName="AppxInstaller_scale-125.appx" Offset="956307" Size="19969">
+			<Resources>
+				<Resource Scale="125"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.scale-150" FileName="AppxInstaller_scale-150.appx" Offset="976358" Size="21394">
+			<Resources>
+				<Resource Scale="150"/>
+			</Resources>
+		</Package>
+		<Package Type="resource" Version="1.0.2181.0" ResourceId="split.scale-400" FileName="AppxInstaller_scale-400.appx" Offset="997834" Size="41215">
+			<Resources>
+				<Resource Scale="400"/>
+			</Resources>
+		</Package>
+		<Package Type="application" Version="1.0.2181.0" Architecture="x86" FileName="AppxInstaller_x86.appx" Offset="1366517" Size="281467">
+			<Resources>
+				<Resource Language="EN-US"/>
+				<Resource Language="EN-GB"/>
+				<Resource Scale="200"/>
+			</Resources>
+		</Package>
+		<Package Type="application" Version="1.0.2181.0" Architecture="x64" FileName="AppxInstaller_x64.appx" Offset="1039125" Size="327316">
+			<Resources>
+				<Resource Language="EN-US"/>
+				<Resource Language="EN-GB"/>
+				<Resource Scale="200"/>
+			</Resources>
+		</Package>
+	</Packages>
+</Bundle>

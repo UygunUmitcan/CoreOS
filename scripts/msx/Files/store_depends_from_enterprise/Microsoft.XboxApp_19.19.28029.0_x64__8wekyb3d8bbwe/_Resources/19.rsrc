@@ -1,0 +1,282 @@
+﻿{
+  "refreshInterval": "1440",
+  "queryUrl": "/settings/v2.0/xbox/MyGamesWin32KGSL",
+  "settings": {
+    "INCLUSIONLIST": [
+      {
+        "Name": "Steam games",
+        "Target": "steam://rungameid/"
+      },
+      {
+        "Name": "League of Legends",
+        "Target": "\\lol.launcher.exe"
+      },
+      {
+        "Name": "World of Warcraft",
+        "Target": "\\World of Warcraft Launcher.exe"
+      },
+      {
+        "Name": "World of Warcraft",
+        "Target": "\\World of Warcraft.exe"
+      },
+      {
+        "Name": "World of Warcraft",
+        "Target": "\\Web Link - World of Warcraft\\launcher.exe"
+      },
+      {
+        "Name": "Hearthstone",
+        "Target": "\\Hearthstone Beta Launcher.exe"
+      },
+      {
+        "Name": "Overwatch",
+        "Target": "\\Overwatch Launcher.exe"
+      },
+      {
+        "Name": "Heroes of the Storm",
+        "Target": "\\Heroes of the Storm.exe"
+      },      
+      {
+        "Name": "Diablo III",
+        "Target": "\\Diablo III Launcher.exe"
+      },
+      {
+        "Name": "Starcraft II",
+        "Target": "\\StarCraft II.exe"
+      },
+      {
+        "Name": "Grand Theft Auto V",
+        "Target": "\\GTAVLauncher.exe"
+      },
+      {
+        "Name": "Grand Theft Auto V",
+        "Target": "\\PlayGTAV.exe"
+      },
+      {
+        "Name": "Titanfall",
+        "Target": "\\Titanfall.exe"
+      },
+      {
+        "Name": "Just Cause 2",
+        "Target": "\\JustCause2.exe"
+      },
+      {
+        "Name": "Watch_Dogs",
+        "Target": "\\Watch_Dogs.exe"
+      },
+      {
+        "Name": "Borderlands",
+        "Target": "\\Borderlands.exe"
+      },
+      {
+        "Name": "Guild Wars 2",
+        "Target": "\\Gw2.exe"
+      },
+      {
+        "Name": "Minecraft",
+        "Target": "\\MinecraftLauncher.exe"
+      },
+      {
+        "Name": "Minecraft",
+        "Target": "\\Minecraft Launcher.exe"
+      },
+      {
+        "Name": "Minecraft",
+        "Target": "\\Minecraft.exe"
+      },
+      {
+        "Name": "Counter-Strike Global Offensive",
+        "Target": "\\csgo.exe"
+      },
+      {
+        "Name": "Witcher 3",
+        "Target": "\\witcher3.exe"
+      },      
+      {
+        "Name": "World of Tanks",
+        "Target": "\\WoTLauncher.exe"
+      },
+      {
+        "Name": "World of Warships",
+        "Target": "\\WoWSLauncher.exe"
+      },
+      {
+        "Name": "SimCity",
+        "Target": "\\SimCity.exe"
+      },
+      {
+        "Name": "Roblox",
+        "Target": "\\RobloxPlayerLauncher.exe"
+      },
+      {
+        "Name": "Roblox",
+        "Target": "\\RobloxPlayerLauncher.exe -browser"
+      },
+      {
+        "Name": "ArcheAge",
+        "Target": "\\archeage.exe"
+      },
+      {
+        "Name": "Crossfire",
+        "Target": "\\CF_G4box.exe"
+      },
+      {
+        "Name": "Smite",
+        "Target": "\\HiRezLauncherUI.exe"
+      },
+      {
+        "Name": "Wildstar",
+        "Target": "\\Wildstar.exe"
+      },
+      {
+        "Name": "Dofus",
+        "Target": "\\Dofus.exe"
+      },
+      {
+        "Name": "Runescape",
+        "Target": "\\JagexLauncher.exe"
+      },
+      {
+        "Name": "Star Trek Online",
+        "Target": "\\ArcLauncher.exe"
+      },
+      {
+        "Name": "DOOM 3",
+        "Target": "\\Doom3.exe"
+      },      
+      {
+        "Name": "Wolfenstein: Enemy Territory",
+        "Target": "\\Wolfenstein - Enemy Territory\\et.exe"
+      },
+      {
+        "Name": "The Sims 4",
+        "Target": "\\The Sims 4\\Game\\Bin\\TS4.exe"
+      },
+      {
+        "Name": "The Sims 3",
+        "Target": "\\Sims3Launcher.exe"
+      },
+      {
+        "Name": "Final Fantasy XIV",
+        "Target": "\\ffxivboot.exe"
+      },
+      {
+        "Name": "Battlefield 3",
+        "Target": "\\bf3.exe"
+      },
+      {
+        "Name": "Battlefield 4",
+        "Target": "\\bf4.exe"
+      },
+      {
+        "Name": "TERA",
+        "Target": "\\TERA-Launcher.exe"
+      },
+      {
+        "Name": "Peggle",
+        "Target": "\\Peggle.exe"
+      },
+      {
+        "Name": "Bejeweled 3",
+        "Target": "\\Bejeweled3.exe"
+      },
+      {
+        "Name": "Bejeweled 3",
+        "Target": "\\Bejeweled3-WT.exe"
+      },
+      {
+        "Name": "Zuma's Revenge",
+        "Target": "\\ZumasRevenge.exe"
+      },
+      {
+        "Name": "Rift",
+        "Target": "\\rift.exe"
+      },
+      {
+        "Name": "Dragon Age Origins",
+        "Target": "\\daorigins.exe"
+      },
+      {
+        "Name": "Mass Effect 3",
+        "Target": "\\MassEffect3.exe"
+      },
+      {
+        "Name": "FIFA 13",
+        "Target": "\\fifa13.exe"
+      },
+      {
+        "Name": "FIFA 14",
+        "Target": "\\fifa14.exe"
+      },
+      {
+        "Name": "FIFA 15",
+        "Target": "\\fifa15.exe"
+      },
+      {
+        "Name": "FIFA 16",
+        "Target": "\\fifa16.exe"
+      },
+      {
+        "Name": "Pro Evolution Soccer 2016",
+        "Target": "\\PES2016.exe"
+      },
+      {
+        "Name": "Dragon Age II",
+        "Target": "\\DragonAge2.exe"
+      },
+      {
+        "Name": "Dead Space 3",
+        "Target": "\\deadspace3.exe"
+      },
+      {
+        "Name": "Star Wars Knights of the Old Republic",
+        "Target": "\\Star Wars - The Old Republic\\launcher.exe"
+      },
+      {
+        "Name": "Dragon Age Inquisition",
+        "Target": "\\DragonAgeInquisition.exe"
+      },
+      {
+        "Name": "The Elder Scrolls Online",
+        "Target": "\\Bethesda.net_Launcher.exe"
+      },
+      {
+        "Name": "The Elder Scrolls V: Skyrim",
+        "Target": "\\SkyrimLauncher.exe"
+      },
+      {
+        "Name": "Fallout: New Vegas",
+        "Target": "\\FalloutNVLauncher.exe"
+      },
+      {
+        "Name": "DOSBox games",
+        "Target": "\\DOSBox.exe"
+      },
+      {
+        "Name": "DOSBox games - Launcher",
+        "Target": "\\DOSBox\\LAUNCHER.exe"
+      },
+      {
+        "Name": "The Sims 3",
+        "Target": "\\Sims3Launcher.exe"
+      },
+      {
+        "Name": "Command & Conquer 3",
+        "Target": "\\CNC3Launcher.exe"
+      },
+      {
+        "Name": "英雄联盟",
+        "Target": "\\TCLS\\Client.exe"
+      }
+    ],
+    "EXCLUSIONLIST": [
+      {
+        "Name": "Blender",
+        "Target": "steam://rungameid/365670"
+      },
+      {
+        "Name": "Cakewalk Loop Manager",
+        "Target": "steam://rungameid/305280"
+      }
+    ]
+  }
+}

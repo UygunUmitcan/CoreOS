@@ -1,0 +1,9 @@
+﻿<UserControl x:ConnectionId='1' x:Class="Microsoft.Xbox.SmartGlass.Controls.BridgedWebBrowser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:canvas="using:Microsoft.Xbox.SmartGlass.Controls"
+                     
+                         >
+    <canvas:WebBrowser x:ConnectionId='2' x:Name="WebView" x:FieldModifier="private" />
+</UserControl>
+

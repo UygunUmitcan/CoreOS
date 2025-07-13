@@ -1,0 +1,13 @@
+﻿<toast {0}>
+  <visual>
+    <binding template="ToastGeneric">
+      <text hint-style="title">{1}</text>
+      <image src="{2}" placement="appLogoOverride" hint-crop="circle"/>
+      <text hint-style="body" hint-wrap="true">{3}</text>
+    </binding>
+  </visual>
+  <actions>
+    <input type="text" id="responseMessage" title="" defaultInput="" placeHolderContent="{4}" hint-visible="true"/>
+    <action activationType="Background" hint-inputId="responseMessage" arguments="?action=MESSAGEREPLY&amp;GAMERTAG={5}&amp;MESSAGEID={6}" content="send" imageUri="ms-appx:///assets/notification.send.png"/>
+  </actions>
+</toast>

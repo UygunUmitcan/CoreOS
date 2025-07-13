@@ -1,0 +1,37 @@
+﻿<tile>
+  <visual>
+    <binding template="TileMedium" hint-overlay="0" branding="name" hint-textStacking="center">
+      <group>
+        <subgroup hint-weight="1"/>
+        <subgroup hint-weight="10">
+          <image id="1" src="{1}" placement="inline" hint-crop="circle" hint-removeMargin="true"/>
+        </subgroup>
+        <subgroup hint-weight="1"/>
+      </group>
+    </binding>  
+    <binding template="TileWide" hint-overlay="0" branding="name">
+      <group>
+        <subgroup hint-weight="33">
+          <image id="1" src="{1}" placement="inline" hint-crop="circle" hint-removeMargin="true"/>          
+        </subgroup>
+        <subgroup>
+          <text id="1" hint-wrap="true" hint-style="Body">{0}</text>
+        </subgroup>
+      </group>
+    </binding>
+    <binding template="TileLarge" hint-textStacking="center" hint-overlay="0" branding="name">
+      <group>
+        <subgroup hint-weight="1"/>
+        <subgroup hint-weight="3">          
+          <image id="1" src="{1}" placement="inline" hint-crop="circle" hint-removeMargin="true"/>
+        </subgroup>
+        <subgroup hint-weight="1"/>
+      </group>
+      <group>
+        <subgroup>
+          <text id="2" hint-wrap="true" hint-align="center" hint-style="Body">{0}</text>
+        </subgroup>
+      </group>
+    </binding>
+  </visual>
+</tile>

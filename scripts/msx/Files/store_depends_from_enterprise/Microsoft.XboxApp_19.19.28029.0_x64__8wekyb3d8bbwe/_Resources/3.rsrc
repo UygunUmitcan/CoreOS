@@ -1,0 +1,7 @@
+﻿<tile>
+  <visual>
+    <binding template="TileMedium" hint-overlay="0" branding="name">
+      <text hint-wrap="true" hint-align="left" hint-style="Caption" hint-maxLines="4">{0}</text>
+    </binding>
+  </visual>
+</tile>

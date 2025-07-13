@@ -1,0 +1,12 @@
+{
+"refreshInterval":30,
+"queryUrl":"/settings/v2.0/xbox/xboxapp",
+"settings":{
+    "ENVIRONMENTSWITCHERENABLED":"false",
+    "TELEMETRYENABLED":"true",
+    "DEFAULTSANDBOXID":"MSFT.1",
+    "PURCHASE_BLOCKED":"CN",
+    "BLOCK_FEATURED_CHILD":"JP",
+    "PROMOTIONAL_CONTENT_RESTRICTED_REGIONS":"US|CA",
+    }
+}

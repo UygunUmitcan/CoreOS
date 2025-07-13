@@ -1,0 +1,9 @@
+﻿<toast {0}>
+  <visual>
+    <binding template="ToastGeneric">
+      <text hint-style="title">{1}</text>
+      <text hint-style="title" hint-wrap="true">{2}</text>
+      <text hint-style="body" hint-wrap="true">{3}</text>
+    </binding>
+  </visual>
+</toast>

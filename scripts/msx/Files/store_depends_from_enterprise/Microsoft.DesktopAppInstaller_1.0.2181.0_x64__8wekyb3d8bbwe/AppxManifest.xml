@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap mp rescap build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <Identity Name="Microsoft.DesktopAppInstaller" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.0.2181.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="199c15cd-11cc-42bc-99de-619509297b5e" PhonePublisherId="95d94207-0c7c-47ed-82db-d75c81153c35" />
+  <Properties>
+    <DisplayName>ms-resource:appDisplayName</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14393.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+    <Resource Language="EN-GB" />
+    <Resource uap:Scale="200" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="AppxClickHandler.exe" EntryPoint="AppxClickHandler.App">
+      <uap:VisualElements DisplayName="ms-resource:appDisplayName" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="ms-resource:appDescription" BackgroundColor="#0078d7" AppListEntry="none">
+        <uap:DefaultTile Square310x310Logo="Assets\Square310x310Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FFFFFF" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="appx">
+            <uap:Logo>256x256.png</uap:Logo>
+            <uap:InfoTip>Windows 10 Application Package</uap:InfoTip>
+            <uap:EditFlags AlwaysUnsafe="true" />
+            <uap:SupportedFileTypes>
+              <uap:FileType>.appx</uap:FileType>
+              <uap:FileType>.appxbundle</uap:FileType>
+            </uap:SupportedFileTypes>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="packageManagement" />
+    <rescap:Capability Name="packageQuery" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="cl.exe" Version="19.00.23026.0 built by: WCSETUP" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23121.0" />
+    <build:Item Name="ProjectGUID" Value="{2910e195-72ee-433c-a714-8add7c86118b}" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.23121.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.14393.0 (rs1_release.160715-1616)" />
+  </build:Metadata>
+</Package>

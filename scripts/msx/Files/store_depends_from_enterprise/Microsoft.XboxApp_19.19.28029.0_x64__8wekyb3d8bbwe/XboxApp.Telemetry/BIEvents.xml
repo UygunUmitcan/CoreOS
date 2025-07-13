@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <eventGroup type="PageActions">
+    <event name="AchievementBrowserDetails" value="Achievement Browser Details" />
+    <event name="AchievementBrowserSelect" value="Achievement Browser Select" />
+    <event name="AchievementDetailsShare" value="Achievement Details Share" />
+    <event name="AchievementDetailsViewOpened" value="Achievement Details View Opened" />
+    <event name="AchievementsBrowser360Filter" value="Achievements Browser 360 Filter" />
+    <event name="AchievementsBrowserFilter" value="Achievements Browser Filter" />
+    <event name="AchievementsFilter" value="Achievements Filter" />
+    <event name="AchievementsCompareCount" value="Achievements Compare Count" />
+    <event name="AchievementsCompareStart" value="Achievements Compare Start" />
+    <event name="AchievementsCompareStop" value="Achievements Compare Stop" />
+    <event name="ActivityAlertsNavigate" value="Activity Alerts - Navigate" />
+    <event name="ActivityAlertsNavigateRightClick" value="Activity Alerts - Navigate RC" />
+    <event name="ActivityDetailCommentInline" value="Activity Detail - Comment Inline" />
+    <event name="ActivityDetailFilter" value="Activity Detail - Filter" />
+    <event name="ActivityFeedAchievementSelection" value="Activity Feed - Achievement Selection" />
+    <event name="ActivityFeedAchievementLegacySelection" value="Activity Feed - Achievement Legacy Selection" />
+    <event name="ActivityFeedAddCaption" value="Activity Feed - Add Caption" />
+    <event name="ActivityFeedAddFriendSelection" value="Activity Feed - Add Friend Selection" />
+    <event name="ActivityFeedBroadcastPlay" value="Activity Feed - Broadcast Play" />
+    <event name="ActivityFeedBroadcastSelection" value="Activity Feed - Broadcast Selection" />
+    <event name="ActivityFeedComment" value="Activity Feed Comment" />
+    <event name="ActivityFeedCommentLike" value="Activity Feed - Comment Like" />
+    <event name="ActivityFeedCommentPost" value="Activity Feed Comment Post" />
+    <event name="ActivityFeedCommentProfile" value="Activity Feed - Comment Profile" />
+    <event name="ActivityFeedCommentUnlike" value="Activity Feed - Comment Un-like" />
+    <event name="ActivityFeedDeleteComment" value="Activity Feed Delete Comment" />
+    <event name="ActivityFeedDeleteItem" value="Activity Feed Delete Item" />
+    <event name="ActivityFeedEditCaption" value="Activity Feed - Edit Caption" />
+    <event name="ActivityFeedFriendSuggestionFollow" value="Activity Feed Friend Suggestion - Follow" />
+    <event name="ActivityFeedFriendSuggestionRemove" value="Activity Feed Friend Suggestion - Remove" />
+    <event name="ActivityFeedFriendSuggestions" value="Activity Feed Friend Suggestions" />
+    <event name="ActivityFeedFriendSuggestionsNavigateProfile" value="Activity Feed Friend Suggestions - Navigate Profile" />
+    <event name="ActivityFeedFriendSuggestionsSeeAll" value="Activity Feed Friend Suggestions - See All" />
+    <event name="ActivityFeedGameClipSelection" value="ActivityFeed - Game Clip Selection" />
+    <event name="ActivityFeedGamertagChangedSelection" value="Activity Feed - Gamertag Changed Selection" />
+    <event name="ActivityFeedItemPickerItemSelected" value="Activity Feed Item Picker - Item Selected" />
+    <event name="ActivityFeedItemPickerShown" value="Activity Feed Item Picker - Shown" />
+    <event name="ActivityFeedLike" value="Activity Feed Like" />
+    <event name="ActivityFeedLikeProfile" value="Activity Feed - Likes Profile" />
+    <event name="ActivityFeedNewActivityButton" value="Activity Feed - New Activity Button" />
+    <event name="ActivityFeedNotificationItem" value="Activity Feed Notification Item" />
+    <event name="ActivityFeedProfileSelection" value="Activity Feed - Profile Selection" />
+    <event name="ActivityFeedReportUser" value="Activity Feed Report User" />
+    <event name="ActivityFeedScreenshotSelection" value="Activity Feed - Screenshot Selection" />
+    <event name="ActivityFeedScrolled" value="Activity Feed - Scrolled" />
+    <event name="ActivityFeedShare" value="Activity Feed Share" />
+    <event name="ActivityFeedShareAchievementSelection" value="Activity Feed Share - Achievement Selection" />
+    <event name="ActivityFeedShareAchievementLegacySelection" value="Activity Feed Share - Achievement Legacy Selection" />
+    <event name="ActivityFeedShareAddFriendSelection" value="Activity Feed Share - Add Friend Selection" />
+    <event name="ActivityFeedShareBroadcastPlay" value="Activity Feed Share - Broadcast Play" />
+    <event name="ActivityFeedShareBroadcastSelection" value="Activity Feed Share - Broadcast Selection" />
+    <event name="ActivityFeedShareGameClipSelection" value="Activity Feed Share - Game Clip Selection" />
+    <event name="ActivityFeedShareGamertagChangedSelection" value="Activity Feed Share - Gamertag Changed Selection" />
+    <event name="ActivityFeedShareProfile" value="Activity Feed - Shares Profile" />
+    <event name="ActivityFeedShareProfileSelection" value="Activity Feed Share - Profile Selection" />
+    <event name="ActivityFeedShareScreenshotSelection" value="Activity Feed Share - Screenshot Selection" />
+    <event name="ActivityFeedShareStatusSelection" value="Activity Feed Share - Status Selection" />
+    <event name="ActivityFeedShowLikes" value="Activity Feed - Show Likes" />
+    <event name="ActivityFeedShowMoreComments" value="Activity Feed - Show More Comments" />
+    <event name="ActivityFeedShowShares" value="Activity Feed - Show Shares" />
+    <event name="ActivityFeedSocialFilter" value="Activity Feed - Social Filter" />
+    <event name="ActivityFeedStatusPostPosted" value="Activity Feed Status Post - Posted" />
+    <event name="ActivityFeedStatusPostSharePickerOpened" value="Activity Feed Status Post - Share Picker Opened" />
+    <event name="ActivityFeedWebLinkPickerOpened" value="Activity Feed Status Post - WebLink Picker Opened" />
+    <event name="ActivityFeedStatusSelection" value="Activity Feed - Status Selection" />
+    <event name="ActivityFeedTrendingSeeAll" value="Activity Feed - Trending See All" />
+    <event name="ActivityFeedUnlike" value="Activity Feed Un-Like" />
+    <event name="ActivityFeedUpdatedExperienceSettings" value="Activity Feed - Updated Experience Settings Button" />
+    <event name="ActivityFeedXboxNewsSelection" value="Activity Feed - Xbox News Selection" />
+    <event name="ActivitySocialBar" value="Activity Social Bar" />
+    <event name="AddFriend" value="Add Friend" />
+    <event name="AddFriendRightClick" value="Add Friend RC" />
+    <event name="AvatarPropAnimation" value="Avatar Prop Animation" />
+    <event name="BackgroundAllow" value="Background Allow" />
+    <event name="BackgroundDeny" value="Background Deny" />
+    <event name="ChangeFriendCancel" value="Change Friend Cancel" />
+    <event name="ChangeFriendOK" value="Change Friend OK" />
+    <event name="ChangeFriendship" value="Change Friendship" />
+    <event name="ChangeFriendshipRightClick" value="Change Friendship RC" />
+    <event name="CheckAutoConnect" value="Check Auto Connect" />
+    <event name="CompactModeOn" value="Compact Mode - On" />
+    <event name="CompactModeOff" value="Compact Mode - Off" />
+    <event name="ClosePopup" value="Close Popup" />
+    <event name="ConnectAddDevice" value="Connect - Add Device" />
+    <event name="ConnectedConsoleController" value="Connected Console - Controller" />
+    <event name="ConnectedConsoleRemote" value="Connected Console - Remote" />
+    <event name="ConnectedConsoleTextCommitted" value="Connected Console - Text Committed" />
+    <event name="ConnectedConsoleVolume" value="Connected Console - Volume" />
+    <event name="ConnectToConsole" value="Connect" />
+    <event name="ConnectToDiscoveredConsole" value="Connect - Discovered Console" />
+    <event name="ConnectToIP" value="Connect - IP" />
+    <event name="ConnectToRememberedConsole" value="Connect - Remembered Console" />
+    <event name="CompareAvatars" value="Compare Avatars" />
+    <event name="CustomizeAvatar" value="Customize Avatar" />
+    <event name="DisconnectConsole" value="Disconnect" />
+    <event name="DiscoverConsole" value="Discover" />
+    <event name="DiscoveredConsole" value="Discovered" />
+    <event name="DrawerToggle" value="Drawer - Toggle" />
+    <event name="DrawerAchievements" value="Achievements" />
+    <event name="DrawerActivityAlerts" value="Activity Alerts" />
+    <event name="DrawerConsole" value="Console" />
+    <event name="DrawerFeedback" value="Feedback Page" />
+    <event name="DrawerGameClips" value="Game Clips" />
+    <event name="DrawerHome" value="Home" />
+    <event name="DrawerMessages" value="Messages" />
+    <event name="DrawerMyGames" value="My Games" />
+    <event name="DrawerPeople" value="People" />
+    <event name="DrawerPins" value="Pins" />
+    <event name="DrawerProfile" value="Profile" />
+    <event name="DrawerProgramGuide" value="OneGuide" />
+    <event name="DrawerSettings" value="Settings" />
+    <event name="DrawerStore" value="Store" />
+    <event name="DrawerSearch" value="Search" />
+    <event name="DrawerTrending" value="Trending" />
+    <event name="FacebookLogin" value="Facebook - Login" />
+    <event name="FacebookLogout" value="Facebook - Logout" />
+    <event name="FacebookUpdatePrivacySettings" value="Facebook - Update Privacy Settings" />
+    <event name="FacebookUpsellCancel" value="Facebook - Upsell Cancel" />
+    <event name="FacebookUpsellSuccess" value="Facebook - Upsell Success" />
+    <event name="FeaturedGamesNavigate" value="Featured Games Navigate" />
+    <event name="FeaturedGamesPrimaryNavigate" value="Featured Games Primary Navigate" />
+    <event name="FeedbackFeatureRate" value="Feedback Feature Rate" />
+    <event name="FeedbackFeedback" value="Feedback - Feedback" />
+    <event name="FeedbackFileABugNavigate" value="Feedback FileABug Navigate" />
+    <event name="FeedbackLaunch" value="Feedback Launch" />
+    <event name="FeedbackRate" value="Feedback Rate" />
+    <event name="FeedbackReportProblemGameDVR" value="Feedback Report Problem GameDVR" />
+    <event name="FeedbackSend" value="Feedback Send" />
+    <event name="FeedbackSurveys" value="Feedback - Surveys" />
+    <event name="ForumsLaunch" value="Forums Launch" />
+    <event name="FriendAdd" value="Friend Add" />
+    <event name="FriendFavorite" value="Friend Favorite" />
+    <event name="FriendListScrolled" value="Friend List Scrolled" />
+    <event name="FriendRemove" value="Friend Remove" />
+    <event name="FriendSuggestionFollow" value="Friend Suggestion Follow" />
+    <event name="FriendSuggestionRemove" value="Friend Suggestion Remove" />
+    <event name="FriendSuggestionRemoveRightClick" value="Friend Suggestion Remove RC" />
+    <event name="FriendSuggestionsFilter" value="Friend Suggestions Filter" />
+    <event name="FriendSuggestionsNavigateToProfile" value="Friend Suggestions Navigate to Profile" />
+    <event name="FriendSuggestionsSeeAll" value="Friend Suggestions - See All" />
+    <event name="FriendUnfavorite" value="Friend Unfavorite" />
+    <event name="GameClipLike" value="Game Clip Like" />
+    <event name="GameClipsChangeClip" value="Game Clips Change Clip" />
+    <event name="GameClipsCommunity" value="Game Clips - Community" />
+    <event name="GameClipsDelete" value="Game Clips Delete" />
+    <event name="GameClipsDownload" value="Game Clips Download" />
+    <event name="GameClipsFilter" value="Game Clips Filter" />
+    <event name="GameClipsFullScreen" value="Game Clips Full Screen" />
+    <event name="GameClipsLocal" value="Game Clips - Local" />
+    <event name="GameClipsOpenFolder" value="Game Clips Open Folder" />
+    <event name="GameClipsPause" value="Game Clips Pause" />
+    <event name="GameClipsPlay" value="Game Clips Play" />
+    <event name="GameClipsRename" value="Game Clips Rename" />
+    <event name="GameClipsShare" value="Game Clips Share" />
+    <event name="GameClipsShared" value="Game Clips - Shared" />
+    <event name="GameClipsTrimmed" value="Game Clips Trimmed" />
+    <event name="GameClipsUpload" value="Game Clips Upload" />
+    <event name="GameClipUnlike" value="Game Clip Un-Like" />
+    <event name="GameFeedbackRate" value="Game - Feedback Rate" />
+    <event name="GameFollow" value="Game Follow" />
+    <event name="GameFollowRightClick" value="Game Follow RC" />
+    <event name="GameListCompareCount" value="Game List Compare Count" />
+    <event name="GameListCompareStart" value="Game List Compare Start" />
+    <event name="GameListCompareStop" value="Game List Compare Stop" />
+    <event name="GameProfileAchievements" value="Game Profile - Achievements" />
+    <event name="GameProfileActivity" value="Game Profile - Activity" />
+    <event name="GameProfileExpand" value="Game Profile - Expand" />
+    <event name="GameProfileFriendsWhoPlayed" value="Game Profile - Friends Who Played" />
+    <event name="GameProfileGameClips" value="Game Profile - Game Clips" />
+    <event name="GameProfileLeaderboard" value="Game Profile - Leaderboard" />
+    <event name="GameProfileNavigateRightClick" value="Game Profile - Navigate RC" />
+    <event name="GameProfilePeopleToWatch" value="Game Profile - People to Watch" />
+    <event name="GameProfilePlay" value="Game Profile - Play" />
+    <event name="GameProfileShowcaseSelection" value="Game Profile - Showcase Selection" />
+    <event name="GameProfileStore" value="Game Profile - Store" />
+    <event name="GameStreamingEntryStart" value="Game Streaming Entry - Start" />
+    <event name="GameStreamingEntryHide" value="Game Streaming Entry - Hide" />
+    <event name="GameStreamingErrorCancel" value="Game Streaming - Error Cancel" />
+    <event name="GameStreamingErrorContinue" value="Game Streaming - Error Continue" />
+    <event name="GameStreamingErrorTitleLaunch" value="Game Streaming - Error TitleId Launched" />
+    <event name="GameStreamingFeedback" value="Game Streaming - Feedback"/>
+    <event name="GameStreamingFullScreen" value="Game Streaming - Full Screen" />
+    <event name="GameStreamingHelp" value="Game Streaming - Help" />
+    <event name="GameStreamingHUDOFF" value="Game Streaming - HUD off" />
+    <event name="GameStreamingHUDON" value="Game Streaming - HUD on" />
+    <event name="GameStreamingMuteChat" value="Game Streaming - Mute Chat" />
+    <event name="GameStreamingNexus" value="Game Streaming - Nexus" />
+    <event name="GameStreamingQuality" value="Game Streaming - Quality" />
+    <event name="GameStreamingStart" value="Game Streaming - Start Streaming" />
+    <event name="GameStreamingStop" value="Game Streaming - Stop Streaming" />
+    <event name="GameStreamingTest" value="Game Streaming - Test Streaming" />
+    <event name="GamertagBlock" value="Gamertag Block" />
+    <event name="GamertagBlockRightClick" value="Gamertag Block RC" />
+    <event name="GamertagSearch" value="Gamertag Search" />
+    <event name="GamertagUnblock" value="Gamertag Unblock" />
+    <event name="GamertagUnblockRightClick" value="Gamertag Unblock RC" />
+    <event name="GameUnfollow" value="Game Unfollow" />
+    <event name="GameUnfollowRightClick" value="Game Unfollow RC" />
+    <event name="HomeBannerNavigate" value="Home Banner Navigate" />
+    <event name="HomeBannerNext" value="Home Banner Next" />
+    <event name="HomeBannerPrevious" value="Home Banner Previous" />
+    <event name="InlineNotificationsClicked" value="Inline Notifications - User Clicked" />
+    <event name="InlineNotificationsTimeoutClosed" value="Inline Notifications - Timeout Closed" />
+    <event name="InlineNotificationsUserClosed" value="Inline Notifications - User Closed" />
+    <event name="LeaderboardAchievementCompare" value="Leaderboard - Achievement Compare" />
+    <event name="LeaderboardEntry" value="Leaderboard - Entry" />
+    <event name="LeaderboardFilter" value="Leaderboard - Filter" />
+    <event name="LinkedAccountPrimaryAction" value="Linked Account - Primary Action" />
+    <event name="MeProfileAchievements" value="Me Profile - Achievements" />
+    <event name="MeProfileActivity" value="Me Profile - Activity" />
+    <event name="MeProfileAppearOnline" value="Me Profile - Appear Online" />
+    <event name="MeProfileAppearOffline" value="Me Profile - Appear Offline" />
+    <event name="MeProfileChangeGamertag" value="Me Profile - Change Gamertag" />
+    <event name="MeProfileChangeGamertagTaken" value="Me Profile - Change Gamertag Taken" />
+    <event name="MeProfileCustomize" value="Me Profile - Customize" />
+    <event name="MeProfileCustomizeTimeSpent" value="Me Profile - Customize Time Spent" />
+    <event name="MeProfileFollowing" value="Me Profile - Following" />
+    <event name="MeProfileGameClips" value="Me Profile - Game Clips" />
+    <event name="MeProfileInfo" value="Me Profile - Info" />
+    <event name="MeProfileLeaderboard" value="Me Profile - Leaderboard" />
+    <event name="MeProfileOverviewExpand" value="Me Profile Overview Expand" />
+    <event name="MeProfileRealNameSharingSettings" value="Me Profile Real Name Sharing Settings" />
+    <event name="MeProfileSwitchedToAvatar" value="Me Profile Switched To Avatar" />
+    <event name="MeProfileSwitchToAvatar" value="Me Profile Switch To Avatar" />
+    <event name="MeProfileSwitchedToGamerpic" value="Me Profile Switched To Gamerpic" />
+    <event name="MeProfileSwitchToGamerpic" value="Me Profile Switch To Gamerpic" />
+    <event name="MeProfileViewPrivacy" value="Me Profile - View Privacy" />
+    <event name="MessageAttachmentAchievement" value="Message Attachment - Achievement Selection" />
+    <event name="MessageAttachmentAchievementLegacy" value="Message Attachment - Achievement Legacy Selection" />
+    <event name="MessageAttachmentAddFriend" value="Message Attachment - Add Friend Selection" />
+    <event name="MessageAttachmentBroadcast" value="Message Attachment - Broadcast Selection" />
+    <event name="MessageAttachmentGameClip" value="Message Attachment - Game Clip Selection" />
+    <event name="MessageAttachmentGamertagChanged" value="Message Attachment - Gamertag Changed Selection" />
+    <event name="MessageAttachmentGeneric" value="Message Attachment - Shared Item Selection" />
+    <event name="MessageAttachmentRedeemCancel" value="Message Attachment - Redeem Cancel" />
+    <event name="MessageAttachmentRedeemSuccess" value="Message Attachment - Redeem Success" />
+    <event name="MessageAttachmentStatus" value="Message Attachment - Status Selection" />
+    <event name="MessagesBlockUser" value="Messages - Block User" />
+    <event name="MessagesCompose" value="Messages - Compose" />
+    <event name="MessagesComposeCancel" value="Messages - Compose Cancel" />
+    <event name="MessagesCopyText" value="Messages - Copy Text" />
+    <event name="MessagesDeleteMessage" value="Messages - Delete Message" />
+    <event name="MessagesDeleteThread" value="Messages - Delete Thread" />
+    <event name="MessagesUnblockUser" value="Messages - Unblock User" />
+    <event name="MessagesViewProfile" value="Messages - View Profile" />
+    <event name="MessagesViewThread" value="Messages - View Thread" />
+    <event name="MiniFriendSuggestionsClose" value="Mini Friend Suggestions - Close" />
+    <event name="MultiplayerPartyInvite" value="Multiplayer - Party Invite" />
+    <event name="MultiplayerPartyGameInvite" value="Multiplayer - Party Game Invite" />
+    <event name="MultiplayerGameInvite" value="Multiplayer - Game Invite" />
+    <event name="MultiplayerGameInviteRightClick" value="Multiplayer - Game Invite RC" />
+    <event name="MultiplayerSessionJoin" value="Multiplayer Session - Joining" />
+    <event name="MyGamesActionDefault" value="My Games - Default" />
+    <event name="MyGamesActionGameHub" value="My Games - Action Game Hub" />
+    <event name="MyGamesActionPlay" value="My Games - Play" />
+    <event name="MyGamesActionRemove" value="My Games - Remove" />
+    <event name="MyGamesActionViewInStore" value="My Games - View In Store" />
+    <event name="MyGamesFindGamesInStore" value="My Games - Find Games In Store" />
+    <event name="MyGamesRightClick" value="My Games - Right Click" />
+    <event name="MyGamesAddGameButton" value="My Games - Add Game Button" />
+    <event name="MyGamesAddGameDefault" value="My Games - Add Game - Default" />
+    <event name="MyGamesAddGameGameNotListedLink" value="My Games - Add Game - My Games Is Not Listed" />
+    <event name="MyGamesAddSelectedGame" value="My Games - Add Selected Game" />
+    <event name="NavigateBack" value="Navigate Back" />
+    <event name="NoMediaPackage" value="No Media Package" />
+    <event name="OpenLinkInBrowser" value="Open Link in Browser" />
+    <event name="PartyFeedback" value="Party - Feedback"/>
+    <event name="PartyJoin" value="Party - Joining" />
+    <event name="PartyLeave" value="Party - Leave Party"/>
+    <event name="PartyStart" value="Party - Start Party"/>
+    <event name="PartyInviteToParty" value="Party - Invite to party"/>
+    <event name="PartyInviteToGame" value="Party - Invite to game"/>
+    <event name="PartyMakeInviteOnly" value="Party -  Make Party Invite-Only"/>
+    <event name="PartyMakeJoinable" value="Party - Make Party Joinable"/>
+    <event name="PartyAllowAudioInBroadcast" value="Party - Allow Audio in Broadcast"/>
+    <event name="PartyDisallowAudioInBroadcast" value="Party - Disallow Audio in Broadcast"/>
+    <event name="PartyMuteAll" value="Party - Mute All"/>
+    <event name="PartyUnmuteAll" value="Party - Unmute All"/>
+    <event name="PartyMute" value="Party - Mute"/>
+    <event name="PartyUnmute" value="Party - Unmute"/>
+    <event name="PartyNavigate" value="People Navigate Party"/>
+    <event name="PartyRemoveFromParty" value="Party - Remove From Party"/>
+    <event name="PartyCloseError" value="Party - Close Error"/>
+    <event name="PartyShowTextView" value="Party - Show Text View"/>
+    <event name="PeopleFilter" value="People Filter" />
+    <event name="PeopleInviteToParty" value="People Invite To Party" />
+    <event name="PeopleInviteToPartyRightClick" value="People Invite To Party RC" />
+    <event name="PeopleNavigateFavorite" value="People Navigate Favorite" />
+    <event name="PeopleNavigateFollower" value="People Navigate Follower" />
+    <event name="PeopleNavigateFriend" value="People Navigate Friend" />
+    <event name="PeopleNavigateFriendRightClick" value="People Navigate Friend RC" />
+    <event name="PeopleNavigateRecent" value="People Navigate Recent" />
+    <event name="PeopleNavigateSearch" value="People Navigate Search" />
+    <event name="PeopleNavigateSuggestion" value="People Navigate Suggestion" />
+    <event name="PeopleNavigateVip" value="People Navigate VIP" />
+    <event name="PeopleSendMessage" value="People Send Message" />
+    <event name="PeopleSendMessageRightClick" value="People Send Message RC" />
+    <event name="PowerOnSuccess" value="Power On Success" />
+    <event name="PowerTrash" value="Power Trash" />
+    <event name="PowerTurnOn" value="Power Turn On" />
+    <event name="PowerTurnOff" value="Power Turn Off" />
+    <event name="ProfileFollowingAndFollowersFilter" value="Profile Following and Followers Filter" />
+    <event name="ProfileLastGamePlayed" value="Profile Last Game Played" />
+    <event name="ProfileNavigateFriend" value="Profile Navigate Friend" />
+    <event name="ProfileNavigateGame" value="Profile Navigate Game" />
+    <event name="ProfileNavigateXboxNews" value="Profile Navigate Xbox News" />
+    <event name="ProtocolDeepLinkLegacyGamercard" value="Protocol deep link - legacy gamercard" />
+    <event name="RealNameShare" value="Share Real Name" />
+    <event name="RealNameShareCancel" value="Real Name Share - Cancel" />
+    <event name="RealNameShareEditName" value="Real Name Share - Edit Name" />
+    <event name="RealNameShareSaveName" value="Real Name Share - Save Name" />
+    <event name="RealNameShareSaveSharing" value="Real Name Share - Save Sharing" />
+    <event name="RealNameShareStop" value="Real Name Share - Stop" />
+    <event name="RealNameUnshare" value="Unshare Real Name" />
+    <event name="RecentGamesFilter" value="Recent Games Filter" />
+    <event name="RecentGamesNavigate" value="Recent Games Navigate" />
+    <event name="RecentGamesPlayButton" value="Recent Games Play Button" />
+    <event name="RecentGamesStreamButton" value="Recent Games Stream Button" />
+    <event name="ReportUserRightClick" value="Report User RC" />
+    <event name="RightContentHostAlerts" value="Right Content Host - Alerts" />
+    <event name="RightContentHostMessages" value="Right Content Host - Messages" />
+    <event name="RightContentHostParty" value="Right Content Host - Party" />
+    <event name="RightContentHostPeople" value="Right Content Host - People" />
+    <event name="SendMessage" value="Send Message" />
+    <event name="SettingsAllowBackgroundBattery" value="Settings - Allow Background Battery" />
+    <event name="SettingsAllowBackgroundWireless" value="Settings - Allow Background Wireless" />
+    <event name="SettingsAllowOnScreenKeyboard" value="Settings - Allow OnScreen Keyboard" />
+    <event name="SettingsAllowAutopostAchievements" value="Settings - Allow Share Achievements Automatically" />
+    <event name="SettingsAllowAutopostGameClipsAndScreenshots" value="Settings - Allow Share Gameclips and Screenshots Automatically" />
+    <event name="SettingsAudioQualityFilter" value="Settings - Audio Quality Filter" />
+    <event name="SettingsFriendsListActivityFeedUpdates" value="Settings - Friends List Activity Feed Updates" />
+    <event name="SettingsFriendsListActivityFeedUpdateNotificationDuration" value="Settings - Friends List Activity Feed Duration" />
+    <event name="SettingsGameDvr" value="Settings - Game DVR" />
+    <event name="SettingsGameDvrAudioNotSupported" value="Settings - Game DVR Audio Not Supported" />
+    <event name="SettingsGameDvrNotSupported" value="Settings - Game DVR Not Supported" />
+    <event name="SettingsGameDvrRecordClipsNotSupported" value="Settings - Game DVR Record Clips Not Supported" />
+    <event name="SettingsGameDvrRecordThatNotSupported" value="Settings - Game DVR Record That Not Supported" />
+    <event name="SettingsGameDvrSaveAlternateFolder" value="Settings - Game DVR Save Alternate Folder" />
+    <event name="SettingsGameStreaming" value="Settings - Game Streaming" />
+    <event name="SettingsGameStreamingKeys" value="Settings - Game Streaming Shortcut Keys Remapped" />
+    <event name="SettingsGameStreamingShowTileOnHome" value="Settings - Show Game Streaming Tile On Home" />
+    <event name="SettingsGeneral" value="Settings - General" />
+    <event name="SettingsGeneralFacebookLink" value="Settings - General Facebook Link" />
+    <event name="SettingsGeneralFacebookSecondary" value="Settings - General Facebook Secondary" />
+    <event name="SettingsGeneralPrivacy" value="Settings - General Privacy" />
+    <event name="SettingsGeneralTwitterLink" value="Settings - General Twitter Link" />
+    <event name="SettingsHelp" value="Settings - Help" />
+    <event name="SettingsLiveTile" value="Settings - Live Tile" />
+    <event name="SettingsToggleVerboseLogging" value="Settings - Toggle Verbose Logging" />
+    <event name="SettingsMaxRecordingTimeFilter" value="Settings - Max Recording Time Filter" />
+    <event name="SettingsMyGamesRefreshGames" value="Settings - My Games Refresh Games" />
+    <event name="SettingsNetwork" value="Settings - Network" />
+    <event name="SettingsNetworkTeredoHelp" value="Settings - Network Teredo Help" />
+    <event name="SettingsNetworkQoSHelp" value="Settings - Network QoS Help" />
+    <event name="SettingsNetworkCheckAgain" value="Settings - Network Check Again" />
+    <event name="SettingsNetworkFeedback" value="Settings - Network Feedback" />
+    <event name="SettingsNetworkRunTests" value="Settings - Network Run Tests" />
+    <event name="SettingsNetworkSendFeedback" value="Settings Network - Send Feedback" />
+    <event name="SettingsNotifyActivityFeed" value="Settings - Notify Activity Feed" />
+    <event name="SettingsNotifyFavoriteOnline" value="Settings - Notify Favorite Online" />
+    <event name="SettingsNotifyMessage" value="Settings - Notify Message" />
+    <event name="SettingsNotifyNewFollower" value="Settings - Notify New Follower" />
+    <event name="SettingsNotifyPartyAndGameInvites" value="Settings - Notify Party and Game Invites" />
+    <event name="SettingsNotifyTwitchStart" value="Settings - Notify Twitch Start" />
+    <event name="SettingsRecordAudio" value="Settings - Record Audio" />
+    <event name="SettingsRecordBackground" value="Settings - Record Background" />
+    <event name="SettingsRecordGameClips" value="Settings - Record Game Clips" />
+    <event name="SettingsRecordLastFilter" value="Settings - Record Last Filter" />
+    <event name="SettingsRecordMicrophone" value="Settings - Record Microphone" />
+    <event name="SettingsShowTimer" value="Settings - Show Timer" />
+    <event name="SettingsSignOut" value="Settings - Sign Out" />
+    <event name="SettingsTips" value="Settings - Tips" />
+    <event name="SettingsVideoEncodingFilter" value="Settings - Video Encoding Filter" />
+    <event name="SettingsVideoQualityFilter" value="Settings - Video Quality Filter" />
+    <event name="SettingsVideoResolutionFilter" value="Settings - Video Resolution Filter" />
+    <event name="ShareToTwitter" value="Share To Twitter" />
+    <event name="ShowcaseSelection" value="Showcase Selection" />
+    <event name="SignInCancel" value="Sign In Cancel" />
+    <event name="StoreGoToGameHub" value="Store - Go To Game Hub" />
+    <event name="StoreHomeOneStore" value="Store Launch OneStore" />
+    <event name="StoreHomeWinHeroNavigate" value="Store Home Win - Hero Navigate" />
+    <event name="StoreHomeWindows" value="Store Home - Windows" />
+    <event name="StoreHomeXbox" value="Store Home - Xbox" />
+    <event name="StoreHomeXboxHeroNavigate" value="Store Home Xbox - Hero Navigate" />
+    <event name="StoreListingFilter" value="Store Listing - Change Filter" />
+    <event name="StoreListingLoadMore" value="Store Listing - Load More" />
+    <event name="StorePlayOnConsole" value="Store - Play On Console" />
+    <event name="StorePurchaseClickApp" value="Store - Purchase App" />
+    <event name="StorePurchaseClickConsumable" value="Store - Purchase Consumable" />
+    <event name="StorePurchaseClickDurable" value="Store - Purchase Durable" />
+    <event name="StorePurchaseClickGame" value="Store - Purchase Game" />
+    <event name="StorePurchaseClickUnknown" value="Store - Purchase Unknown" />
+    <event name="StorePurchaseClickUnmanagedConsumable" value="Store - Purchase Unmanaged Consumable" />
+    <event name="StorePurchaseSuccess" value="Store - Purchase Success" />
+    <event name="StorePurchaseLoaded" value="Store - Purchase Loaded" />
+    <event name="StoreNavigateAddOn" value="Store - Navigate Add On" />
+    <event name="StoreNavigateBundle" value="Store - Navigate Bundle" />
+    <event name="StoreNavigateQuery" value="Store - Navigate Query" />
+    <event name="StoreNavigateRelated" value="Store - Navigate Related" />
+    <event name="StoreNavigateSearch" value="Store - Navigate Search" />
+    <event name="StoreRedeemButton" value="Store - Redeem Button" />
+    <event name="StoreSearch" value="Store Search" />
+    <event name="StoreViewListing" value="Store View Listing" />
+    <event name="SubscriptionLevel" value="Subscription Level" />
+    <event name="TipAnchorClickedAddFriend" value="Tip Anchor Clicked - Add Friend" />
+    <event name="TipAnchorClickedEditProfile" value="Tip Anchor Clicked - Edit Profile" />
+    <event name="TipClickedEditProfile" value="Tip Clicked - Edit Profile" />
+    <event name="TipShownAddFriend" value="Tip Shown - Add Friend" />
+    <event name="TipShownEditProfile" value="Tip Shown - Edit Profile" />
+    <event name="TipShownSuggestionsTitleFail" value="Tip Shown - Suggestions Fail" />
+    <event name="TipShownSuggestionsTitleSuccess" value="Tip Shown - Suggestions Success" />
+    <event name="TitleBarRefresh" value="Title Bar - Refresh" />
+    <event name="TitleUpdateMandatoryGetItNow" value="Title Update - Mandatory Get It Now" />
+    <event name="TitleUpdateOptionalGetItNow" value="Title Update - Optional Get It Now" />
+    <event name="TitleUpdateOptionalRemindMe" value="Title Update - Optional Remind Me" />
+    <event name="ToastAcceptPartyInvitation" value="Toast - Accept Party Invitation" />
+    <event name="ToastDeclinePartyInvitation" value="Toast - Decline Party Invitation" />
+    <event name="ToastReplyToMessage" value="Toast - Reply to Message" />
+    <event name="ToastSelect" value="Toast - Select" />
+    <event name="TrendingFilter" value="Trending - Filter" />
+    <event name="TrendingItemSelection" value="Trending - Item Selection" />
+    <event name="TrendingScrolled" value="Trending - Scrolled" />
+    <event name="TrendingTopic" value="Trending - Topic" />
+    <event name="UncheckAutoConnect" value="Uncheck Auto Connect" />
+    <event name="UserVoiceLaunch" value="UserVoice Launch" />
+    <event name="UtilityBarAlerts" value="Utility Bar - Alerts" />
+    <event name="UtilityBarBack" value="Utility Bar - Back" />
+    <event name="UtilityBarMessages" value="Utility Bar - Messages" />
+    <event name="UtilityBarParty" value="Utility Bar - Party" />
+    <event name="UtilityBarPeople" value="Utility Bar - People" />
+    <event name="UtilityBarRefresh" value="Utility Bar - Refresh" />
+    <event name="WatchBroadcast" value="Watch Broadcast" />
+    <event name="WebblendLongCancel" value="Webblend Long Cancel" />
+    <event name="WebblendQuickCancel" value="Webblend Quick Cancel" />
+    <event name="WebLinkPickerConfirm" value="Web Link Picker - Confirm" />
+    <event name="WebLinkPickerGetUrl" value="Web Link Picker - Get Url" />
+    <event name="WebLinkPickerRemoveImage" value="Web Link Picker - Remove Image" />
+    <event name="WhatsNewBeta" value="Whats New - Beta" />
+    <event name="XboxNewsActivityFeed" value="Xbox News - Activity Feed" />
+    <event name="XboxNewsInfo" value="Xbox News - Info" />
+    <event name="XboxNewsFollow" value="Xbox News - Follow" />
+    <event name="XboxNewsUnfollow" value="Xbox News - Unfollow" />
+    <event name="YouProfileAchievements" value="You Profile - Achievements" />
+    <event name="YouProfileActivity" value="You Profile - Activity" />
+    <event name="YouProfileFollowing" value="You Profile - Following" />
+    <event name="YouProfileGameClips" value="You Profile - Game Clips" />
+    <event name="YouProfileInfo" value="You Profile - Info" />
+    <event name="YouProfileNavigateToPresenceTitle" value="You Profile - Navigate To Presence Title" />
+    <event name="YouProfileLeaderboard" value="You Profile - Leaderboard" />
+    <event name="YouProfileMute" value="You Profile - Mute" />
+    <event name="YouProfileMuteRightClick" value="You Profile - Mute RC" />
+    <event name="YouProfileOverviewExpand" value="You Profile Overview Expand" />
+    <event name="YouProfileSendMessage" value="You Profile - Send Message" />
+    <event name="YouProfileUnmute" value="You Profile - Unmute" />
+    <event name="YouProfileUnmuteRightClick" value="You Profile - Unmute RC" />
+  </eventGroup>
+
+  <eventGroup type="OneGuidePageActions">
+    <event name="AppChannelAppExpanded" value="App Channel App Expanded" />
+    <event name="AppChannelFindMore" value="App Channel Find More" />
+    <event name="ChannelFavorited" value="Channel Favorited" />
+    <event name="ChannelUnfavorited" value="Channel Unfavorited" />
+    <event name="PipExpanded" value="PipExpanded" />
+    <event name="ProviderChanged" value="Provider Changed" />
+    <event name="OneGuideLoaded" value="OneGuide Loaded" />
+    <event name="OneGuideLocaleChanged" value="OneGuide Locale Changed" />
+    <event name="ShowDetails" value="Show Details" />
+    <event name="ShowExpanded" value="Show Expanded" />
+    <event name="ShowTuned" value="Show Tuned" />
+    <event name="TvStreamClose" value="TV Stream Closed" />
+    <event name="TvStreamForceClosed" value="TV Stream Force Closed" />
+    <event name="TvStreamFullScreenLive" value="TV Stream Full Screen Live" />
+    <event name="TvStreamFullScreenOneGuide" value="TV Stream Full Screen OneGuide" />
+    <event name="TvStreamFullScreenPlay" value="TV Stream Full Screen Play" />
+    <event name="TvStreamFullScreenPause" value="TV Stream Full Screen Pause" />
+    <event name="TvStreamFullScreenSkipForward" value="TV Stream Full Screen Skip Forward" />
+    <event name="TvStreamFullScreenSkipBack" value="TV Stream Full Screen Skip Back" />
+    <event name="TvStreamFullScreenScrubber" value="TV Stream Full Screen Scrubber" />
+    <event name="TvStreamLaunch" value="TV Stream Launch" />
+    <event name="TvStreamQualityPicker" value="TV Stream Quality Picker" />
+    <event name="UrcButtonPressed" value="URC Button Pressed" />
+  </eventGroup>
+
+  <eventGroup type="PageViews">
+    <event name="AchievementCompare" value="Achievement - Compare" />
+    <event name="AchievementsBrowser" value="Achievements Browser" />
+    <event name="AchievementsBrowser360" value="Achievements Browser 360" />
+    <event name="AchievementsBrowserOther" value="Achievements Browser Other" />
+    <event name="AchievementsBrowserMobile" value="Achievements Browser Mobile" />
+    <event name="AchievementsBrowserMoLive" value="Achievements Browser MoLive" />
+    <event name="AchievementsBrowserInvalid" value="Achievements Browser Invalid" />
+    <event name="AchievementsHub" value="Achievements Hub" />
+    <event name="ActivityAlerts" value="Activity Alerts" />
+    <event name="ActivityFeedAchievement" value="Activity Feed - Achievement" />
+    <event name="ActivityFeedAchievementLegacy" value="Activity Feed - Achievement Legacy" />
+    <event name="ActivityFeedAddFriend" value="Activity Feed - Add Friend" />
+    <event name="ActivityFeedBroadcast" value="Activity Feed - Broadcast" />
+    <event name="ActivityFeedGameClip" value="Activity Feed - Game Clip" />
+    <event name="ActivityFeedGamertagChanged" value="Activity Feed - Gamertag Changed" />
+    <event name="ActivityFeedLikesPopup" value="Activity Feed Likes Popup" />
+    <event name="ActivityFeedScreenshot" value="Activity Feed - Screenshot" />
+    <event name="ActivityFeedShareAchievement" value="Activity Feed Share - Achievement" />
+    <event name="ActivityFeedShareAchievementLegacy" value="Activity Feed Share - Achievement Legacy" />
+    <event name="ActivityFeedShareAddFriend" value="Activity Feed Share - Add Friend" />
+    <event name="ActivityFeedShareBroadcast" value="Activity Feed Share - Broadcast" />
+    <event name="ActivityFeedShareGameClip" value="Activity Feed Share - Game Clip" />
+    <event name="ActivityFeedShareGamertagChanged" value="Activity Feed Share - Gamertag Changed" />
+    <event name="ActivityFeedSharesPopup" value="Activity Feed Shares Popup" />
+    <event name="ActivityFeedShareScreenshot" value="Activity Feed Share - Screenshot" />
+    <event name="ActivityFeedShareStatus" value="Activity Feed Share - Status" />
+    <event name="ActivityFeedStatus" value="Activity Feed - Status" />
+    <event name="Auth" value="Auth" />
+    <event name="ChangeFriendshipPopup" value="Change Friendship Popup" />
+    <event name="ChangeGamertag" value="Change Gamertag" />
+    <event name="ConsoleConnection" value="Console Connection" />
+    <event name="ConsoleConnectionTextInput" value="Console Connection - Text Input" />
+    <event name="DiscoveredConsoles" value="Discovered Consoles" />
+    <event name="Feedback" value="Feedback" />
+    <event name="FeedbackFeedback" value="Feedback - Feedback" />
+    <event name="FeedbackPage" value="Feedback Page" />
+    <event name="FeedbackSurveys" value="Feedback - Surveys" />
+    <event name="FileABug" value="FileABug" />
+    <event name="FriendSuggestions" value="Friend Suggestions" />
+    <event name="GameClipHub" value="Game Clip Hub" />
+    <event name="GameClipsCommunity" value="Game Clips - Community" />
+    <event name="GameClipsLocal" value="Game Clips - Local" />
+    <event name="GameClipsShared" value="Game Clips - Shared" />
+    <event name="GameProfile" value="Game Profile" />
+    <event name="GameProfile360Achievements" value="Game Profile 360 - Achievements" />
+    <event name="GameProfileAchievements" value="Game Profile - Achievements" />
+    <event name="GameProfileActivity" value="Game Profile - Activity" />
+    <event name="GameProfileExpand" value="Game Profile - Expand" />
+    <event name="GameProfileFriendsWhoPlayed" value="Game Profile - Friends Who Played" />
+    <event name="GameProfileGameClips" value="Game Profile - Game Clips" />
+    <event name="GameProfilePeopleToWatch" value="Game Profile - People to Watch" />
+    <event name="GameStreaming" value="Game Streaming" />
+    <event name="GameStreamingFeedback" value="Game Streaming Feedback" />
+    <event name="InlineNotificationsOpen" value="Inline Notifications - Open" />
+    <event name="Launch" value="Launch" />
+    <event name="Leaderboard" value="Leaderboard" />
+    <event name="LinkedAccountMangement" value="Linked Account Management" />
+    <event name="Main" value="Home" />
+    <event name="MeProfile" value="ME Profile" />
+    <event name="MeProfileAchievements" value="Me Profile - Achievements" />
+    <event name="MeProfileActivity" value="Me Profile - Activity" />
+    <event name="MeProfileCustomize" value="Me Profile - Customize" />
+    <event name="MeProfileFollowing" value="Me Profile - Following" />
+    <event name="MeProfileGameClips" value="Me Profile - Game Clips" />
+    <event name="MeProfileInfo" value="Me Profile - Info" />
+    <event name="MessageCompose" value="Compose Message" />
+    <event name="MessagePopup" value="Messages Popup" />
+    <event name="MessagesHub" value="Messaging Hub" />
+    <event name="MyGames" value="My Games" />
+    <event name="MyGamesAddGame" value="My Games - Add Game" />
+    <event name="NetworkTest" value="Network Test"/>
+    <event name="OneGuideAppChannels" value="OneGuide App Channels" />
+    <event name="OneGuideEpg" value="OneGuide EPG" />
+    <event name="OneGuideFavorites" value="OneGuide Favorites" />
+    <event name="OneGuideFindAppChannels" value="OneGuide Find App Channels" />
+    <event name="OneGuideRecentChannels" value="OneGuide Recent Channels" />
+    <event name="Oobe" value="OOBE" />
+    <event name="Party"  value="Party" />
+    <event name="PartyFeedback" value="Party Feedback" />
+    <event name="People" value="People" />
+    <event name="PeoplePicker" value="People Picker" />
+    <event name="PurchaseDetails" value="Purchase Details" />
+    <event name="PurchaseFlowHost" value="Purchase Flow Host" />
+    <event name="RealNameSharing" value="Real Name Sharing" />
+    <event name="RedeemCodeHost" value="Redeem Code Host" />
+    <event name="ReportUser" value="Report User" />
+    <event name="Settings" value="Settings" />
+    <event name="SettingsGeneral" value="Settings - General" />
+    <event name="SettingsGameDvr" value="Settings - Game DVR" />
+    <event name="SettingsGameStreaming" value="Settings - Game Streaming" />
+    <event name="SettingsNetwork" value="Settings - Network" />
+    <event name="ShareToPicker" value="Share To Picker" />
+    <event name="SignInSplash" value="Splash" />
+    <event name="StoreBde" value="Store BDE" />
+    <event name="StoreHome" value="Store Home" />
+    <event name="StoreHomeWindows" value="Store Home - Windows" />
+    <event name="StoreHomeXbox" value="Store Home - Xbox" />
+    <event name="StoreListing" value="Store Listing" />
+    <event name="StoreSearch" value="Store Search" />
+    <event name="StreamingView" value="StreamingView" />
+    <event name="TitleUpdateMandatory" value="Title Update - Mandatory" />
+    <event name="TitleUpdateOptional" value="Title Update - Optional" />
+    <event name="TvStreamFullScreen" value="TV Stream Full Screen" />
+    <event name="UniversalRemote" value="Universal Remote" />
+    <event name="UrcDisabled" value="URC Disabled" />
+    <event name="VideoViewer" value="Video Viewer" />
+    <event name="VolumeControl" value="Volume Control" />
+    <event name="WhatsNew" value="What's New" />
+    <event name="XboxController" value="Xbox Controller" />
+    <event name="XboxNewsActivityFeed" value="Xbox News - Activity Feed" />
+    <event name="XboxNewsInfo" value="Xbox News - Info" />
+    <event name="YouProfile" value="YOU Profile" />
+    <event name="YouProfileAchievements" value="You Profile - Achievements" />
+    <event name="YouProfileActivity" value="You Profile - Activity" />
+    <event name="YouProfileFollowing" value="You Profile - Following" />
+    <event name="YouProfileGameClips" value="You Profile - Game Clips" />
+    <event name="YouProfileInfo" value="You Profile - Info" />
+  </eventGroup>
+
+  <eventGroup type="Errors">
+    <event name="ActivityFeedStatusPostError" value="Activity Feed Status Post - Error" />
+    <event name="AutoConsoleConnect" value="Auto Console Connect" />
+    <event name="FacebookLoginError" value="Facebook - Login Error" />
+    <event name="FacebookLogoutError" value="Facebook - Logout Error" />
+    <event name="GameClipUploadError" value="Game Clip Upload Error" />
+    <event name="GameStreamErrorShown" value="GameStream Modal Error Shown" />
+    <event name="GameStreamVersionError" value="GameStream failed due to version mismatch" />
+    <event name="IPConsoleConnect" value="IP Address Console Connect" />
+    <event name="ManualConsoleConnect" value="Manual Console Connect" />
+    <event name="MyGamesEnumeration" value="My Games Enumeration" />
+    <event name="MyGamesGameListEvents" value="My Games GameList Events" />
+    <event name="MyGamesGetDisplayPic" value="My Games GetDisplayPic" />
+    <event name="MyGamesLaunchAsync" value="My Games Launch Async" />
+    <event name="MyGamesLogoLoadFailure" value="My Games Logo Load Failure" />
+    <event name="MyGamesQueryCandidatesIsGame" value="My Games Query Candidates IsGame" />
+    <event name="MyGamesCachedListFailedObtainingGameListEntry" value="My Games Cached List failed obtaining GameListEntry" />
+    <event name="MyGamesInitializationHang" value="My Games - Initialization Hang" />
+    <event name="MyGamesMetadataFailureTitleName" value="My Games - Failure getting TitleName for Entry" />
+    <event name="MyGamesMetadataFailureDisplayPic" value="My Games - Failure getting DisplayPic for Entry" />
+    <event name="NetworkTestError" value="Network Test" />
+    <event name="NetworkTestVersionError" value="Network test failed due to version mismatch" />
+    <event name="NowPlayingDetailsError" value="Now Playing details unavailable" />
+    <event name="OneGuideHeadendError" value="OneGuide Headend" />
+    <event name="PartyChatError" value="Party Chat Error" />
+    <event name="PartyChatGetPartyError" value="Party Chat Get Party Error" />
+    <event name="PartyChatInviteError" value="Party Chat Invite Error" />
+    <event name="PartyChatAcceptInviteError" value="Party Chat Accept Invite Error" />
+    <event name="PartyChatJoinError" value="Party Chat Join Error" />
+    <event name="PartyChatLeaveError" value="Party Chat Leave Error" />
+    <event name="PartyChatPlmError" value="Party Chat PLM Error" />
+    <event name="PartyChatRemoveUserError" value="Party Chat Remove User Error" />
+    <event name="PartyChatStartError" value="Party Chat Start Error" />
+    <event name="PartyChatToggleMuteError" value="Party Chat Toggle Mute Error" />
+    <event name="PartyChatToggleMuteAllError" value="Party Chat Toggle Mute All Error" />
+    <event name="PeopleGetPeopleListError" value="Failed to get list of people." />
+    <event name="PowerOffError" value="Power Off Error" />
+    <event name="PowerOnError" value="Power On Error" />
+    <event name="PushNotificationEmptyPayloadError" value="Received a raw notification with an empty content payload" />
+    <event name="PushNotificationError" value="Push Notification - Error" />
+    <event name="PushNotificationParseError" value="Received a raw notification that we were unable to parse" />
+    <event name="ScrollTrackingRegistrationError" value="Scroll Tracking Registration Error" />
+    <event name="SignInErrorState" value="Sign In Error State" />
+    <event name="SignInFail" value="Sign In Fail" />
+    <event name="SignInProviderError" value="Sign In Provider Error" />
+    <event name="StorePurchaseError" value="Store - Purchase Error" />
+    <event name="TaskCancelledAccountUpdate" value="Task Cancelled - Account Update" />
+    <event name="TaskCancelledInitLiveTile" value="Task Cancelled - Init Live Tile" />
+    <event name="TaskCancelledPushNotification" value="Task Cancelled - Push Notification" />
+    <event name="TaskCancelledRefreshLiveTile" value="Task Cancelled - Refresh Live Tile" />
+    <event name="TaskCancelledRefreshNotificationChannel" value="Task Cancelled - Refresh Notification Channel" />
+    <event name="TaskCancelledToastAction" value="Task Cancelled - Toast Action" />
+    <event name="ToastAchievementError" value="Received invalid image URI for achievement" />
+    <event name="TrendingUnhandledFeedItem" value="Trending - Unhandled Feed Item" />
+    <event name="TVSettingsFailureWithoutCached" value="TVSettings Failure Without Cached" />
+    <event name="TVStreamError" value="TV Stream Error" />
+    <event name="WebblendNavigationFailed" value="Webblend Navigation Failed" />
+    <event name="XAMLBoolPickerConverter" value ="XAML Bool Picker Converter" />
+  </eventGroup>
+
+  <eventGroup type="Performance">
+    <event name="FreeMemory" value="Free Memory" />
+    <event name="HomeLoad" value="Home Load" />
+    <event name="Launch" value="Launch" />
+    <event name="MyGamesLoad" value="My Games Load" />
+    <event name="MyGamesQueryCandidatesList" value="MyGames Query Candidates List" />
+    <event name="MyGamesListCacheLoad" value="MyGames Load cached games" />
+    <event name="MyGamesListLiveLoad" value="MyGames Load games from Games API" />
+    <event name="MyGamesQueryCandidatesListWin32KGSL" value="MyGames Query Candidates List Win32KGSL" />
+    <event name="NetworkTestResult" value="Network Test" />
+    <event name="PerformanceEpgLoad" value="EPG Load" />
+    <event name="TVStreamSeek" value="Stream Seek" />
+    <event name="ViewModelStateChange" value="ViewModel State Change" />
+  </eventGroup>
+
+  <eventGroup type="Info">
+    <event name="DiscoveredConsolesCount" value="DiscoveredConsolesCount" />
+    <event name="Friends" value="Friends" />
+    <event name="Gamerscore" value="Gamerscore" />
+    <event name="HomeActivityFeed" value="HomeActivityFeed" />
+    <event name="LocalGameClips" value="LocalGameClips" />
+    <event name="LocalScreenshots" value="LocalScreenshots" />
+    <event name="MeProfileActivityFeed" value="MeProfileActivityFeed" />
+    <event name="MyGamesStoreCount" value="MyGamesStoreCount" />
+    <event name="MyGamesTotalCount" value="MyGamesTotalCount" />
+    <event name="MyGamesWin32Count" value="MyGamesWin32Count" />
+    <event name="OnlineFriends" value="OnlineFriends" />
+    <event name="PeopleAppSynced" value="PeopleAppSynced" />
+    <event name="RecentGames" value="RecentGames" />
+    <event name="RememberedConsolesCount" value="RememberedConsolesCount" />
+  </eventGroup>
+
+  <eventGroup type="AppLaunch">
+    <event name="Activated" value="Activated" />
+    <event name="Launched" value="Launch" />
+    <event name="LiveTile" value="Live Tile" />
+    <event name="ProtocolActivation" value="Protocol Activation" />
+    <event name="Toast" value="Toast" />
+  </eventGroup>
+
+  <eventGroup type="SiufQuestion">
+    <event name="LaunchUserClosed" value="Launch - User Closed" />
+    <event name="Suspend" value="Suspend" />
+  </eventGroup>
+</events>

@@ -1,0 +1,13 @@
+﻿{
+    "name": "Xbox SmartGlass",
+    "allowedTitleIds": "*",
+    "allowedServices": "*",
+    "permissions": {
+        "allowMetrics": true,
+        "allowCryptoNotifications": true,
+        "allowLaunchUri": true
+    },
+    "expirationDate": "2024-01-01T00:00:00.0Z"
+}
+
+// SGSignature: Fyz81hwphq5deQjy49dkUhzkm+ZicFzCqi0ZKJEAAV+BiX6fbtDrh5wDwQMJduTbGh2dldYm+qOhQJc1FWO9rWfWDEfQUyrOWBb7Z2Sm5BsKnWCZh5S/DGBB5tIHKaLsRbgvxKIruXTpIR6dhX4epPnCDGqQpxiLp1zPSq1rbW4bTt+4O/EzwHMccSt2fkRoHzyGVG9GgsNEgQ3EvJKKWjKhIOlt9UKtdLVEXiGaJvK/4RzAsc6JEKhiZFOpwXrLuBJjLCEEKJ9jI6wsfrKxjKz4ia30XES0djg4UdN5MD76ijO2cmxfB3ew7ylnNbE+EXrYVXtfgQ3vfbO5eEIipQ==

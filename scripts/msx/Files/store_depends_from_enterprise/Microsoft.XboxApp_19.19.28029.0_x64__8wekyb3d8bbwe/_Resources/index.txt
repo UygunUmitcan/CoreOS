@@ -1,0 +1,25 @@
+XboxApp.Model, Version=19.19.1607.28029, Culture=neutral, PublicKeyToken=null
+  XboxApp.Model.Resources.CommunityLiveTileFormat.xml
+  XboxApp.Model.Resources.LoggedOnLiveTileFormat.xml
+  XboxApp.Model.Resources.LogoLiveTileFormat.xml
+  XboxApp.Model.Resources.SecondaryLoggedOnLiveTileFormat.xml
+  XboxApp.Model.Environment.TestConfig.xml
+XboxApp.EpgDataModel, Version=19.19.1607.28029, Culture=neutral, PublicKeyToken=null
+  XboxApp.EpgDataModel.Resources.ContentRatings.json
+XboxApp.Platform, Version=19.19.1607.28029, Culture=neutral, PublicKeyToken=null
+  XboxApp.Platform.Resources.sg_app.config.appKey
+  XboxApp.Platform.Resources.sg_app.config.signed
+XboxApp.UI, Version=19.19.1607.28029, Culture=neutral, PublicKeyToken=null
+  XboxApp.UI.Shell.Resources.TitlePersonToastOneActionFormat.xml
+  XboxApp.UI.Shell.Resources.CaptureUploadCompleteToastFormat.xml
+  XboxApp.UI.Shell.Resources.PartyBroadcastingToastFormat.xml
+  XboxApp.UI.Shell.Resources.PartyChatInviteToastFormat.xml
+  XboxApp.UI.Shell.Resources.PartyChatTextToastFormat.xml
+  XboxApp.UI.Shell.Resources.MessageWithInlineReplyToastFormat.xml
+  XboxApp.UI.Shell.Resources.InviteToastFormat.xml
+  XboxApp.UI.Shell.Resources.TitlePersonToastFormat.xml
+  XboxApp.UI.Shell.Resources.loginsrf.xml
+  XboxApp.UI.Shell.Resources.Settings.json
+  XboxApp.UI.Shell.Resources.LiveTVSettings.json
+  XboxApp.UI.Shell.Resources.MyGamesWin32KGSL.json
+  XboxApp.UI.Shell.Resources.MyGamesWin32Filter.json

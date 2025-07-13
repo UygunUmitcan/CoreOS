@@ -1,0 +1,12 @@
+﻿<toast {0}>
+  <visual>
+    <binding template="ToastGeneric">
+      <text hint-style="title">{1}</text>
+      <image src="{2}" placement="appLogoOverride" hint-crop="circle"/>
+      <text hint-style="body" hint-wrap="true">{3}</text>
+    </binding>
+  </visual>
+  <actions>
+    <action activationType="foreground" arguments="{4}" content="{5}"/>
+  </actions>
+</toast>

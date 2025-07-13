@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap mp build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  
+  <Identity Name="Microsoft.StorePurchaseApp" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.0.45.0" ProcessorArchitecture="x64"/>
+  <mp:PhoneIdentity PhoneProductId="b6eb1e98-b7e1-442a-a6c0-f1d7fc14c64f" PhonePublisherId="95d94207-0c7c-47ed-82db-d75c81153c35"/>
+  <Properties>
+    <DisplayName>Store Purchase App</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14357.0" MaxVersionTested="10.0.14357.0"/>
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.23816.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US"/>
+    <Resource Language="EN-GB"/>
+    <Resource uap:Scale="200"/>
+    
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="PurchaseApp.exe" EntryPoint="PurchaseApp.App">
+      <uap:VisualElements AppListEntry="none" DisplayName="Store Purchase App" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Store Purchase App" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png"/>
+      </uap:VisualElements>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="https://*.*.microsoft.com/" Type="include" WindowsRuntimeAccess="none"/>
+        <uap:Rule Match="https://*.microsoft.com/" Type="include" WindowsRuntimeAccess="none"/>
+        <uap:Rule Match="https://xbox-pay.chinatvpay.com/" Type="include" WindowsRuntimeAccess="none"/>
+        <uap:Rule Match="https://xbox-pay-test.com/" Type="include" WindowsRuntimeAccess="none"/>
+      </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient"/>
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="cl.exe" Version="19.00.23918.0 built by: VCTOOLSREL"/>
+    <build:Item Name="VisualStudio" Version="14.0"/>
+    <build:Item Name="OperatingSystem" Version="10.0.10586.15 (th2_release.151119-1817)"/>
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25123.0"/>
+    <build:Item Name="ProjectGUID" Value="{89e491dd-776e-40b1-8d35-f2ca0039724c}"/>
+    <build:Item Name="ilc.exe" Version="1.3.24018.00 built by: PROJECTNREL"/>
+    <build:Item Name="OptimizingToolset" Value="ilc.exe"/>
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="true"/>
+    <build:Item Name="UniversalGenericsOptOut" Value="false"/>
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25219.0"/>
+    <build:Item Name="MakePri.exe" Version="10.0.14357.1001 (rs1_release.160529-0257)"/>
+  </build:Metadata>
+</Package>

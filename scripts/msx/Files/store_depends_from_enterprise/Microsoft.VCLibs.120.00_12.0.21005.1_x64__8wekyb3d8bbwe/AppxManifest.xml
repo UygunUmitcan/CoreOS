@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.VCLibs.120.00" ProcessorArchitecture="x64" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="12.0.21005.1" />
+  <Properties>
+    <Framework>true</Framework>
+    <DisplayName>Microsoft Visual C++ Runtime Package</DisplayName>
+    <PublisherDisplayName>Microsoft Platform Extensions</PublisherDisplayName>
+    <Description>Microsoft Visual C++ Runtime support for native applications</Description>
+    <Logo>logo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+</Package>

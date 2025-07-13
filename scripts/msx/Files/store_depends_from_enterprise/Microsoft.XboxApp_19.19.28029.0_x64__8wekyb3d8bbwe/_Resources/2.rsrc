@@ -1,0 +1,13 @@
+﻿<tile>
+  <visual hint-overlay="0">
+    <binding template="TileMedium" branding="name">
+      <image id="1" src="{0}" placement="Background"/>
+    </binding>
+    <binding template="TileWide" branding="name" hint-overlay="0">
+      <image id="1" src="{1}" placement="Background"/>
+    </binding>
+    <binding template="TileLarge" branding="name" hint-overlay="0">
+      <image id="1" src="{2}" placement="Background"/>
+    </binding>
+  </visual>
+</tile>

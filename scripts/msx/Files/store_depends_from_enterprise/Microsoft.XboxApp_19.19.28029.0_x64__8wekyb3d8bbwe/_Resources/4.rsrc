@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Change the configuration properties below to set-up your environment (only applicable in DEBUG)
+UserName: live id (e.g. myusername@hotmail-int.com on vint, or myusername@hotmail.com for production)
+Password: password
+Environment: set to Production or DNET.
+UseTestDiscoveryManager: if true, will use a stubbed implementation if IDiscoveryManager
+
+Debug dashboard:
+EnableDebugDash: true to enable debug dashboard
+EnableLogViewer: true to have the log viewer in the dashboard show all traces at app launch
+EnableSessionViewer: true to have the session events viewer in the dashobard show all session events at app launch
+DashVisibleOnLaunch: true to have the dash open at app launch
+TraceHost: The IP address used by the TraceService to broadcast traces to (typically the ip address where RemoteLogViewer is running)
+TracePort: The Port number to send trace messages to
+-->
+<TestConfig
+  UserName="sgdev1@xboxtest.com"
+  Password="Reachweb123"
+  Environment="Production"
+  EnableDebugDash="true"
+  EnableLogViewer="true"
+  EnableSessionViewer="false"
+  DashVisibleOnLaunch="false"
+  UseTestConnectionManager="false"
+  UseTestTokenManager="true"
+  UseTestShell="false"
+  SystemIpConnection="1.1.1.1"
+  UseTestDiscoveryManager="false"
+  ChannelLineupId="daf65644-8fd2-f0b7-0533-4aa0b0e3e249"
+  StressRunEnabled="false"
+  EnableRemoteLogViewer="false"
+  TraceHost="127.0.0.0"
+  TracePort="3000"
+  ClearUserDataOnNewAppVersion="false"
+  DefaultSandbox="RETAIL"
+  MissingRatingContentAdultEnabled="false"
+  EnableAvatars="true"
+  ShowEveryoneAsAvatars="false"
+  />
