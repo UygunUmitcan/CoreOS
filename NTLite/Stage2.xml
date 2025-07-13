@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Preset isAutoSaved="true" xmlns="urn:schemas-nliteos-com:pn.v1">
-	<Date>07/13/2025 21:18:28</Date>
+	<Date>07/14/2025 00:16:25</Date>
 	<AppInfo>
 		<Version>2025.7.10526</Version>
 		<Licensed>No</Licensed>
 		<Protections>Yes</Protections>
-		<Host>Windows 10 Professional 22H2 x64 - 10.0.19045.2965 (en-US)</Host>
+		<Host>Windows 10 IoTEnterpriseS 21H2 x64 - 10.0.19044.1288 (en-US)</Host>
 	</AppInfo>
 	<ImageInfo>
 		<Version mode="offline">Windows 10 IoTEnterpriseS 21H2 x64 - 10.0.19044.1288 (en-US)</Version>
-		<GUID>{799F8848-A46A-474F-A769-64992AC74264}</GUID>
+		<GUID>{14DFD5FC-563B-4B99-8630-C95CC9D40F8B}</GUID>
 	</ImageInfo>
 	<RemoveComponents AppRemovalMode="DISM">
 		<c>1527c705-839a-4832-9118-54d4bd6a0c89 'File Picker'</c>
@@ -355,7 +355,6 @@
 				<Tweak name="CrashControl\CrashDumpEnabled">0</Tweak>
 			</TweakGroup>
 			<TweakGroup name="DesktopTweaks">
-				<Tweak name="Search\SearchboxTaskbarMode">0</Tweak>
 				<Tweak name="Explorer\NoPinningStoreToTaskbar">1</Tweak>
 				<Tweak name="Explorer\AltTabSettings">1</Tweak>
 				<Tweak name="Personalize\AppsUseLightTheme">0</Tweak>
@@ -369,16 +368,9 @@
 				<Tweak name="Desktop\ScreenSaverIsSecure">0</Tweak>
 				<Tweak name="QuietHours\Enable">0</Tweak>
 				<Tweak name="Start\HideRecentJumplists">1</Tweak>
-				<Tweak name="Search\SearchboxTaskbarMode">1</Tweak>
+				<Tweak name="Search\SearchboxTaskbarMode">0</Tweak>
 				<Tweak name="System\DisableLogonBackgroundImage">1</Tweak>
 				<Tweak name="Keyboard\PrintScreenKeyForSnippingEnabled">0</Tweak>
-			</TweakGroup>
-			<TweakGroup name="Network">
-				<Tweak name="NewNetworkWindowOff\NewNetworkWindowOff">1</Tweak>
-			</TweakGroup>
-			<TweakGroup name="UAC">
-				<Tweak name="System\EnableLUA">0</Tweak>
-				<Tweak name="System\ConsentPromptBehaviorAdmin">0</Tweak>
 			</TweakGroup>
 			<TweakGroup name="EventLogs">
 				<Tweak name="Microsoft-Windows-OOBE-Machine-DUI\Operational\Enabled">0</Tweak>
@@ -409,6 +401,9 @@
 				<Tweak name="Advanced\HideFileExt">0</Tweak>
 				<Tweak name="Advanced\Hidden">2</Tweak>
 				<Tweak name="Advanced\ShowSuperHidden">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Network">
+				<Tweak name="NewNetworkWindowOff\NewNetworkWindowOff">1</Tweak>
 			</TweakGroup>
 			<TweakGroup name="PowerAndShutdown">
 				<Tweak name="Power\HiberbootEnabled">0</Tweak>
@@ -533,6 +528,10 @@
 				<Tweak name="DeviceGuard\EnableVirtualizationBasedSecurity">0</Tweak>
 				<Tweak name="WinRE\UninstallWindowsRE">1</Tweak>
 			</TweakGroup>
+			<TweakGroup name="UAC">
+				<Tweak name="System\EnableLUA">0</Tweak>
+				<Tweak name="System\ConsentPromptBehaviorAdmin">0</Tweak>
+			</TweakGroup>
 			<TweakGroup name="WindowsDefender">
 				<Tweak name="State\AccountProtection_MicrosoftAccount_Disconnected">0</Tweak>
 				<Tweak name="Notifications\DisableNotifications">1</Tweak>
@@ -552,7 +551,7 @@
 				<Tweak name="Settings\HideMCTLink">1</Tweak>
 				<Tweak name="Settings\RestartNotificationsAllowed2">0</Tweak>
 				<Tweak name="ContentDeliveryManager\SubscribedContent-310093Enabled">0</Tweak>
-				<Tweak name="WindowsUpdate\TargetReleaseVersionInfo">22H2</Tweak>
+				<Tweak name="WindowsUpdate\TargetReleaseVersionInfo">21H2</Tweak>
 				<Tweak name="WindowsStore\AutoDownload">0</Tweak>
 				<Tweak name="AU\NoAutoUpdate">1</Tweak>
 				<Tweak name="AU\AUOptions">2</Tweak>
